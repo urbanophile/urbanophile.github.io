@@ -1,2 +1,5 @@
 output/*
+themes/*
 *.pyc
+cache/*
+.DS_Store
