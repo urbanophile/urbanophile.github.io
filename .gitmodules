@@ -1,0 +1,6 @@
+[submodule "output"]
+	path = output
+	url = git@github.com:urbanophile/urbanophile.github.io.git
+[submodule "pelican-svbhack"]
+	path = themes/pelican-svbhack
+	url = git@github.com:gfidente/pelican-svbhack.git
