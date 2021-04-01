@@ -17,4 +17,12 @@ git commit -m "a change to my website"
 git push origin master
 ```
 
-output is a separate repo for website which is a git submodule.
+output is a separate repo for website which is a git submodule. Also the theme is separate submodule, so don't forget to clone that.
+
+Preview changes with
+
+```
+pelican --listen
+```
+
+and navigate to http://localhost:8000/ 
