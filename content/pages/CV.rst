@@ -2,7 +2,7 @@
 CV
 ==
 
-Todo
+Looking for work. Email me for details.
 
 
 
