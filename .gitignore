@@ -1,5 +1,11 @@
 output/*
 themes/*
+cache/
+
+# python caching nonsense
 *.pyc
-cache/*
+.mypy_cache
+__pycache__/
+
+# MacOS Rubbish
 .DS_Store
