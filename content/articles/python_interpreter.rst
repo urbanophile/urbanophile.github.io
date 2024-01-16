@@ -2,7 +2,6 @@ Exploring the CPython interpreter
 #################################
 
 :date: 2015-06-26
-:category: python
 :authors: Matt Gibson
 :summary: Resources for exploring the CPython interpreter.
 
