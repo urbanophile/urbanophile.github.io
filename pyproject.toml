@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "mattsite2"
+version = "0.2.0"
+description = "my personal site"
+authors = ["Matt Gibson <contact.matt.gibson@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.12"
+pelican = {extras = ["markdown"], version = "^4.9.1"}
+git = "github.com:Python-Markdown/markdown.git"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
