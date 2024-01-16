@@ -2,11 +2,15 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
+####### IMPORTANT ######
+# this is only for local development
+
 
 # #### Basic settings ####
 AUTHOR = "Matt Gibson"
 SITENAME = "Matt Gibson"
 SITEURL = "http://www.matthew-gibson.com"
+RELATIVE_URLS = True
 
 PATH = "content"
 
@@ -18,10 +22,10 @@ DEFAULT_DATE_FORMAT = "%Y %B %d"
 
 
 # these features
-AUTHOR_SAVE_AS = False
-AUTHORS_SAVE_AS = False
-CATEGORY_SAVE_AS = False
-CATEGORIES_SAVE_AS = False
+# AUTHOR_SAVE_AS = False
+# AUTHORS_SAVE_AS = False
+# CATEGORY_SAVE_AS = False
+# CATEGORIES_SAVE_AS = False
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -30,12 +34,17 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-
+# #### URL setttings ####
 STATIC_PATHS = ["images", "extra/robots.txt", "extra/favicon.ico"]
 EXTRA_PATH_METADATA = {
     "extra/robots.txt": {"path": "robots.txt"},
     "extra/favicon.ico": {"path": "favicon.ico"},
 }
+PATH_METADATA = "(?P<path_no_ext>.*)\..*"
+ARTICLES_PATH = [
+    "articles",
+]
+ARTICLE_URL = ARTICLE_SAVE_AS = PAGE_URL = PAGE_SAVE_AS = "{path_no_ext}.html"
 
 
 # Blogroll
