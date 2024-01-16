@@ -1,1 +1,0 @@
-Hauck-Donner phenomenon
