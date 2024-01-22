@@ -1,7 +1,6 @@
 ========
 About Me
 ========
-:category: yeah
 :author: Matt Gibson
 :summary: About me page
 :URL:

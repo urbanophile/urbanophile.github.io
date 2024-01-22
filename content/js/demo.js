@@ -2,7 +2,7 @@
 
 function myCallback() {
   const elt = document.getElementById("demo");
-  if (elt.innerHTML == "Hello JavaScript") {
+  if (elt.innerHTML === "Hello JavaScript") {
     elt.innerHTML = "Hello World";
     elt.style.backgroundColor = "#64a6ea";
     elt.style.maxWidth = "7em";
