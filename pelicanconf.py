@@ -11,12 +11,26 @@ AUTHOR = "Matt Gibson"
 SITENAME = "Matt Gibson"
 SITESUBTITLE = "Artisanal Data and Software Gibbon"
 # configure automatically if using githubpages + custom domain
-SITEURL = "https://www.matthew-gibson.com"
+SITEURL = "https://matthew-gibson.com"
 TIMEZONE = "Australia/Sydney"
 
-
+# where the source is located
 PATH = "content"
 
+
+# ▼▼▼▼▼▼▼▼▼▼ OVERWRITTEN in publishconf.py ▼▼▼▼
+RELATIVE_URLS = True
+MENUITEMS = [
+    ("About", "/"),
+    # ("Projects", "/pages/projects.html"),
+    ("CV", "/pages/CV.html"),
+    ("Blog", "/category/blog.html")
+    # ("Contact", "/pages/contact.html"),
+]
+# ▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲
+
+DISPLAY_PAGES_ON_MENU = False
+DISPLAY_CATEGORIES_ON_MENU = False
 
 DEFAULT_LANG = "en"
 DEFAULT_DATE_FORMAT = "%Y %B %d"
@@ -30,11 +44,12 @@ EXTRA_PATH_METADATA = {
     "extra/CNAME": {"path": "CNAME"},
 }
 
+# IGNORE_FILES = ["drafts/*"]
+
 # #### URL settings ####
-RELATIVE_URLS = True  # for local development only
 PATH_METADATA = "(?P<path_no_ext>.*)\..*"
 ARTICLES_PATH = [
-    "articles",
+    "Blog",
 ]
 ARTICLE_URL = ARTICLE_SAVE_AS = PAGE_URL = PAGE_SAVE_AS = "{path_no_ext}.html"
 
@@ -46,7 +61,7 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 
-DEFAULT_PAGINATION = 10
+# DEFAULT_PAGINATION = 10
 
 
 # #### Theme settings ####

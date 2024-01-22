@@ -17,13 +17,10 @@ from pelicanconf import *
 
 # SITEURL = "https://matthew-gibson.com"
 RELATIVE_URLS = False
-
-# FEED_ALL_ATOM = 'feeds/all.atom.xml'
-# CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
-
-# DELETE_OUTPUT_DIRECTORY = True
-
-# Following items are often useful when publishing
-
-# DISQUS_SITENAME = ""
-# GOOGLE_ANALYTICS = ""
+MENUITEMS = [
+    ("About", "https://matthew-gibson.com/"),
+    # ("Projects", "/pages/projects.html"),
+    ("CV", "https://matthew-gibson.com/pages/CV.html"),
+    ("Blog", "https://matthew-gibson.com/category/blog.html")
+    # ("Contact", "/pages/contact.html"),
+]

@@ -2,14 +2,9 @@
 
 This is contains the code I was using make my personal website hosted on github pages. It contains a lot cruft.
 
-## Setup repo
+Look at this for info on configuring Github Pages: <https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site>
 
-Current bizarre workflow is
-
-```
-git clone git@github.com:urbanophile/urbanophile.github.io.git
-mv urbanophile.github.io output
-```
+The publishing workflow with Github Actions is here: <https://docs.getpelican.com/en/latest/tips.html#publishing-to-github-pages-using-a-custom-github-actions-workflow>
 
 ## Build dev site
 
