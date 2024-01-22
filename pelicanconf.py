@@ -11,7 +11,7 @@ AUTHOR = "Matt Gibson"
 SITENAME = "Matt Gibson"
 SITESUBTITLE = "Artisanal Data and Software Gibbon"
 # configure automatically if using githubpages + custom domain
-SITEURL = "https://matthew-gibson.com"
+# SITEURL = "https://matthew-gibson.com"
 TIMEZONE = "Australia/Sydney"
 
 # where the source is located
