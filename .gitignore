@@ -1,5 +1,8 @@
+# pelican nonsense
 output/*
 cache/
+# this is just for convenience, so I remember the default theme I'm extending
+themes/simple/  
 
 # python caching nonsense
 *.pyc
