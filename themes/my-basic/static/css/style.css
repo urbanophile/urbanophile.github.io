@@ -13,46 +13,26 @@ body {
     display: block;
 }
 
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    color: inherit !important
+}
+
+
 a:link {
     color: blue;
     text-decoration: none;
 }
 
-a:hover {
+a:hover,
+a:visited {
     color: blue;
     text-decoration: underline;
 }
 
-a:visited {
-    color: blue;
-}
-
-h1 a {
-    color: inherit !important
-}
-
-h2 a {
-    color: inherit !important
-}
-
-h3 a {
-    color: inherit !important
-}
-
-h4 a {
-    color: inherit !important
-}
-
-h5 a {
-    color: inherit !important
-}
-
-h6 a {
-    color: inherit !important
-}
-
+nav > ul > li,
 #menu li {
-    display: inline;
+    /* set inline */
+    display: inline-block;
 }
 
 #post-list {
@@ -64,7 +44,3 @@ pre {
     margin: 2em 1em 2em 4em;
 }
 
-nav > ul > li {
-    /* set inline */
-    display: inline-block;
-}

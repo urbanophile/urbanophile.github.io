@@ -6,5 +6,8 @@ cache/
 .mypy_cache
 __pycache__/
 
-# MacOS Rubbish
+# MacOS nonsense
 .DS_Store
+
+# node and js nonsense
+node_modules/
