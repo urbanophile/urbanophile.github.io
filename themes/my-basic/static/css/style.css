@@ -1,51 +1,76 @@
+
+:root {
+  --my-monospace-code: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+  --my-bg-color: #fff;
+  --my-link-color: navy;
+  --my-header-link-color: black;
+}
+
 body {
-    font-family: monospace;
-    font-size: 16px;
-    background-color: white;
-    color: #111;
-    width: 80%;
-    min-width: 400px;
-    min-height: 200px;
-    max-width: 50em;
-    padding: 1em;
-    margin: 5% 10%;
-    border: thin solid gray;
+  font-family: var(--my-monospace-code);
+
+  /* fluid sizing: https://frontaid.io/blog/fluid-typography-2d-css-locks-clamp/ */
+  font-size: clamp(1em, 0.909em + 0.45vmin, 1.25em);
+
+  background-color: var(--my-bg-color);
+  color: #111;
+
+  /* should be about 50-70 characters wide */
+  max-width: 70ch;
+
+  /* larger spacing on larger screens, very small spacing on tiny screens */
+  padding: calc(1vmin + .5rem);
+
+  /* shorthand for margin-left/margin-right */
+  margin-inline: auto;
+
+    /* border: thin solid gray;
     border-radius: 5px;
-    display: block;
+    display: block; */
 }
 
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-    color: inherit !important
+nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav ul a {
+  padding: 0.5em 1em;
+  display: block;
+
 }
 
 
-a:link {
-    color: blue;
+header a:link {
+  color: var(--my-header-link-color);
+  text-decoration: none;
+}
+
+header a:hover,
+header a:visited {
+    color: var(--my-header-link-color);
+    text-decoration: underline;
+    text-decoration-thickness: 0.1em;
+}
+
+
+
+main a:link {
+    color: var(--my-link-color);
     text-decoration: none;
 }
 
-a:hover,
-a:visited {
-    color: blue;
+main a:hover,
+main a:visited {
+    color: var(--my-link-color);
     text-decoration: underline;
+    text-decoration-thickness: 0.1em;
 }
 
-header{ 
-    text-align: center;
-}
 
-nav > ul > li,
-#menu li {
-    /* set inline */
-    display: inline-block;
-}
 
-#post-list {
-    margin-bottom: 1em;
-    margin-top: 1em;
-}
 
-pre {
-    margin: 2em 1em 2em 4em;
-}
+
 
