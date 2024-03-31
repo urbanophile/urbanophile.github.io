@@ -12,10 +12,12 @@ Experience
 ------------
 
 - Freelance Developer
+- Research Engineer
+- Data Scientist
 
 Education
 ------------
 
-- Ph.D. UNSW, CSE
-- M.Sc. University of Sydney, Maths
-- B.Sc. University of Auckland, Maths
+- Ph.D. UNSW, CS (Computer Vision and Machine learning)
+- M.Sc. University of Sydney, Maths (Algebraic Combinatorics)
+- B.Sc. University of Auckland, Maths (H1) + Computation and Logic
