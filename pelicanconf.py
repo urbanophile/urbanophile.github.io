@@ -32,44 +32,34 @@ MENUITEMS = [
 DISPLAY_PAGES_ON_MENU = False
 DISPLAY_CATEGORIES_ON_MENU = False
 
-# where the source is located
+# where the source content is located
 PATH = "content"
 
+# pages are standalone html
+PAGE_PATHS = ['pages']
 
-# ▼▼▼▼▼▼▼▼▼▼ OVERWRITTEN in publishconf.py ▼▼▼▼
-RELATIVE_URLS = True
-MENUITEMS = [
-    ("About", "/"),
-    # ("Projects", "/pages/projects.html"),
-    ("CV", "/pages/CV.html"),
-    ("Blog", "/category/blog.html"),
-    # ("Contact", "/pages/contact.html"),
-]
-# ▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲
-
-DISPLAY_PAGES_ON_MENU = False
-DISPLAY_CATEGORIES_ON_MENU = False
+# articles are arranged chronologically
+ARTICLES_PATH = ["Blog"]
 
 DEFAULT_LANG = "en"
 DEFAULT_DATE_FORMAT = "%Y %B %d"
 
 
 # #### Static Assets ####
-STATIC_PATHS = ["images", "extra/robots.txt", "extra/favicon.ico", "extra/CNAME"]
+STATIC_PATHS = ["images", "extra/robots.txt", "extra/favicon.ico"]
 EXTRA_PATH_METADATA = {
     "extra/robots.txt": {"path": "robots.txt"},
     "extra/favicon.ico": {"path": "favicon.ico"},
-    "extra/CNAME": {"path": "CNAME"},
 }
 
 # IGNORE_FILES = ["drafts/*"]
 
 # #### URL settings ####
+# should mirror filesystem hierarchy
+# see: https://docs.getpelican.com/en/4.9.1/settings.html#url-settings
 PATH_METADATA = "(?P<path_no_ext>.*)\..*"
-ARTICLES_PATH = [
-    "Blog",
-]
-ARTICLE_URL = ARTICLE_SAVE_AS = PAGE_URL = PAGE_SAVE_AS = "{path_no_ext}.html"
+ARTICLE_URL = ARTICLE_SAVE_AS = "{path_no_ext}.html"
+PAGE_URL = PAGE_SAVE_AS = "{path_no_ext}.html"
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
