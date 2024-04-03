@@ -12,4 +12,6 @@ I am a software and machine learning developer in `Sydney <http://en.wikipedia.o
 
 I'm also quite keen on gibbons 🐒.
 
+I acknowledge and pay my respects to the Traditional Custodians of the land on which I work and live, and their elders past, present, and emerging. Sovereignty was never ceded. 
+
 This second version of my homepage hosted by Github Pages and created using Pelican.

@@ -24,7 +24,25 @@ MENUITEMS = [
     ("About", "/"),
     # ("Projects", "/pages/projects.html"),
     ("CV", "/pages/CV.html"),
-    ("Blog", "/category/blog.html")
+    ("Blog", "/category/blog.html"),
+    # ("Contact", "/pages/contact.html"),
+]
+# ▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲
+
+DISPLAY_PAGES_ON_MENU = False
+DISPLAY_CATEGORIES_ON_MENU = False
+
+# where the source is located
+PATH = "content"
+
+
+# ▼▼▼▼▼▼▼▼▼▼ OVERWRITTEN in publishconf.py ▼▼▼▼
+RELATIVE_URLS = True
+MENUITEMS = [
+    ("About", "/"),
+    # ("Projects", "/pages/projects.html"),
+    ("CV", "/pages/CV.html"),
+    ("Blog", "/category/blog.html"),
     # ("Contact", "/pages/contact.html"),
 ]
 # ▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲
