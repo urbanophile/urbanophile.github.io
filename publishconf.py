@@ -16,5 +16,5 @@ from pelicanconf import *
 
 
 # SITEURL = "https://matthew-gibson.com"
-RELATIVE_URLS = True
-DISPLAY_PAGES_ON_MENU = True
+# RELATIVE_URLS = True
+# DISPLAY_PAGES_ON_MENU = True
