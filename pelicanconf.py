@@ -13,11 +13,15 @@ SITEURL = "http://www.matthew-gibson.com"
 RELATIVE_URLS = True
 
 PATH = "content"
+PATH = "content"
 
+TIMEZONE = "Australia/Sydney"
 TIMEZONE = "Australia/Sydney"
 
 DEFAULT_LANG = "en"
+DEFAULT_LANG = "en"
 
+DEFAULT_DATE_FORMAT = "%Y %B %d"
 DEFAULT_DATE_FORMAT = "%Y %B %d"
 
 
@@ -37,6 +41,8 @@ AUTHOR_FEED_RSS = None
 # #### URL setttings ####
 STATIC_PATHS = ["images", "extra/robots.txt", "extra/favicon.ico"]
 EXTRA_PATH_METADATA = {
+    "extra/robots.txt": {"path": "robots.txt"},
+    "extra/favicon.ico": {"path": "favicon.ico"},
     "extra/robots.txt": {"path": "robots.txt"},
     "extra/favicon.ico": {"path": "favicon.ico"},
 }
