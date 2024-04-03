@@ -16,11 +16,5 @@ from pelicanconf import *
 
 
 # SITEURL = "https://matthew-gibson.com"
-RELATIVE_URLS = False
-MENUITEMS = [
-    ("About", "https://matthew-gibson.com/"),
-    # ("Projects", "/pages/projects.html"),
-    ("CV", "https://matthew-gibson.com/pages/CV.html"),
-    ("Blog", "https://matthew-gibson.com/category/blog.html")
-    # ("Contact", "/pages/contact.html"),
-]
+RELATIVE_URLS = True
+DISPLAY_PAGES_ON_MENU = True
