@@ -5,6 +5,7 @@ This is contains the code I was using make my personal website hosted on github 
 Look at this for info on 
   -  [configuring DNS for Github Pages](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site)
   - the publishing workflow for [pelican with Github Actions](https://docs.getpelican.com/en/latest/tips.html#publishing-to-github-pages-using-a-custom-github-actions-workflow)
+  - remember the `CNAME` file in `content/extra/` and the CNAME config in `pelicanconf.py`. [Relevant pelican docs](https://docs.getpelican.com/en/latest/tips.html#copy-static-files-to-the-root-of-your-site).
 
 ## Build dev site
 
