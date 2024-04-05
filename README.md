@@ -43,3 +43,13 @@ git push origin master
 ```
 
 output is a separate repo for website which is a git submodule. Also the theme is separate submodule, so don't forget to clone that.
+
+
+## Blogs using Pelican
+
+using markdown 
+- https://github.com/TheDigitalCatOnline/blog_source
+
+using rst
+  -  https://github.com/benhoff/blog
+  - https://github.com/getpelican/pelican-blog
