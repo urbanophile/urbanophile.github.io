@@ -14,9 +14,6 @@ SITESUBTITLE = "Artisanal Data and Software Gibbon"
 # SITEURL = "https://matthew-gibson.com"
 TIMEZONE = "Australia/Sydney"
 
-# where the source is located
-PATH = "content"
-
 
 # ▼▼▼▼▼▼▼▼▼▼ OVERWRITTEN in publishconf.py ▼▼▼▼
 RELATIVE_URLS = True
@@ -60,7 +57,7 @@ EXTRA_PATH_METADATA = {
 # #### URL settings ####
 # should mirror filesystem hierarchy
 # see: https://docs.getpelican.com/en/4.9.1/settings.html#url-settings
-PATH_METADATA = "(?P<path_no_ext>.*)\..*"
+PATH_METADATA = "(?P<path_no_ext>.*)\..*"  # don't fix this syntax warning
 ARTICLE_URL = ARTICLE_SAVE_AS = "{path_no_ext}.html"
 PAGE_URL = PAGE_SAVE_AS = "{path_no_ext}.html"
 

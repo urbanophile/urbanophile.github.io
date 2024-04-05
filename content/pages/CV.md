@@ -1,6 +1,9 @@
+---
 Title: CV
 Author: Matt Gibson
 Summary: My CV
+---
+
 
 Looking for work. My email can be found on my github commits.
 
