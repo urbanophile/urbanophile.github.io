@@ -17,6 +17,8 @@
   <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/style.css" />
   <!-- end deviation -->
 
+  <link rel="shortcut icon" type="image/jpg" href="{{ SITEURL }}/theme/images/favicon.ico">
+
   {% if FEED_ALL_ATOM %}
   <link
     href="{{ FEED_DOMAIN }}/{% if FEED_ALL_ATOM_URL %}{{ FEED_ALL_ATOM_URL }}{% else %}{{ FEED_ALL_ATOM }}{% endif %}"
@@ -60,7 +62,8 @@
 <body>
   <header>
     <hgroup>
-      <h1><a href="{{ SITEURL }}/">{{ SITENAME }}</a></h1>{% if SITESUBTITLE %}<p>{{ SITESUBTITLE }}</p>{% endif %}
+      <h1><a href="{{ SITEURL }}/">{{ SITENAME }}</a></h1>
+      {% if SITESUBTITLE %}<p>{{ SITESUBTITLE }}</p>{% endif %}
     </hgroup>
     <nav>
       <ul>
@@ -86,9 +89,9 @@
     {% block content %}
     {% endblock %}
   </main>
-  <!-- <footer>
-    c
-  </footer> -->
+  <footer>
+    © 2024 All rights reserved.
+  </footer>
 </body>
 
 </html>

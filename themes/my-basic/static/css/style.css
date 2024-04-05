@@ -4,6 +4,10 @@
   --my-bg-color: #fff;
   --my-link-color: navy;
   --my-header-link-color: black;
+  --small-font-size: 75%;
+
+  --border: #ccc;
+  --standard-border-radius: 5px;
 }
 
 body {
@@ -29,6 +33,29 @@ body {
     display: block; */
 }
 
+/* Typographical settings */
+h1, h2, h3 {
+  line-height: 1.1rem;
+}
+
+h1 {
+  font-size: 2.35em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.75em;
+}
+
+
+small, sub, sup {
+  font-size: var(--small-font-size);
+}
+
+/* styling for nav */
 nav ul {
   display: flex;
   margin: 0;
@@ -37,15 +64,24 @@ nav ul {
 }
 
 nav ul a {
-  padding: 0.5em 1em;
+  padding: 0.5em 1em 0.5em 0;
   display: block;
 
 }
 
+/* nav li {
+  border: 1px solid var(--border);
+  border-radius: var(--standard-border-radius);
+  margin: 0 0.5em;
+} */
+
+hgroup  h1  a:hover, hgroup  h1  a:visited, hgroup h1  a:link {
+  text-decoration: none;
+}
 
 header a:link {
   color: var(--my-header-link-color);
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 header a:hover,
@@ -70,7 +106,23 @@ main a:visited {
 }
 
 
+/* styling for code */
 
 
+/* for articles */
+article {
+  padding: 0 0 0.75em 0;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 0.75em;
+}
 
+article p {
+  margin: 0 0 0.8em 0;
+}
 
+article footer {
+  font-size: var(--small-font-size);
+  margin-top: 1em;
+  /* border-top: 1px solid #8a55a8; */
+  padding-top: 0.5em;
+}

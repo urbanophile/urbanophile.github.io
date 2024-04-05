@@ -29,6 +29,9 @@ MENUITEMS = [
 ]
 # ▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲
 
+LOAD_CONTENT_CACHE = False
+
+
 DISPLAY_PAGES_ON_MENU = False
 DISPLAY_CATEGORIES_ON_MENU = False
 
@@ -36,7 +39,7 @@ DISPLAY_CATEGORIES_ON_MENU = False
 PATH = "content"
 
 # pages are standalone html
-PAGE_PATHS = ['pages']
+PAGE_PATHS = ["pages"]
 
 # articles are arranged chronologically
 ARTICLES_PATH = ["Blog"]
