@@ -10,27 +10,30 @@ from __future__ import unicode_literals
 AUTHOR = "Matt Gibson"
 SITENAME = "Matt Gibson"
 SITESUBTITLE = "Artisanal Data and Software Gibbon"
+
 # configure automatically if using githubpages + custom domain
-# SITEURL = "https://matthew-gibson.com"
+SITEURL = ""
+DEBUG = True
+RELATIVE_URLS = True
+
 TIMEZONE = "Australia/Sydney"
 
 
 # ▼▼▼▼▼▼▼▼▼▼ OVERWRITTEN in publishconf.py ▼▼▼▼
-RELATIVE_URLS = True
-MENUITEMS = [
-    ("About", "/"),
-    # ("Projects", "/pages/projects.html"),
-    ("CV", "/pages/CV.html"),
-    ("Blog", "/category/blog.html"),
-    # ("Contact", "/pages/contact.html"),
-]
+# MENUITEMS = [
+#     ("About", "/pages/About.html"),
+#     # ("Projects", "/pages/projects.html"),
+#     ("CV", "/pages/CV.html"),
+#     ("Blog", "/category/blog.html"),
+#     # ("Contact", "/pages/contact.html"),
+# ]
 # ▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲
 
 LOAD_CONTENT_CACHE = False
 
 
-DISPLAY_PAGES_ON_MENU = False
-DISPLAY_CATEGORIES_ON_MENU = False
+DISPLAY_PAGES_ON_MENU = True
+DISPLAY_CATEGORIES_ON_MENU = True
 
 # where the source content is located
 PATH = "content"
