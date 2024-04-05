@@ -55,6 +55,13 @@ EXTRA_PATH_METADATA = {
     "extra/favicon.ico": {"path": "favicon.ico"},
 }
 
+SITEMAP = {
+    "format": "txt",
+    "priorities": {"articles": 0.5, "indexes": 0.5, "pages": 0.5},
+    "changefreqs": {"articles": "monthly", "indexes": "daily", "pages": "monthly"},
+}
+
+
 # IGNORE_FILES = ["drafts/*"]
 
 # #### URL settings ####
