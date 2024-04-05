@@ -20,20 +20,20 @@ TIMEZONE = "Australia/Sydney"
 
 
 # ▼▼▼▼▼▼▼▼▼▼ OVERWRITTEN in publishconf.py ▼▼▼▼
-# MENUITEMS = [
-#     ("About", "/pages/About.html"),
-#     # ("Projects", "/pages/projects.html"),
-#     ("CV", "/pages/CV.html"),
-#     ("Blog", "/category/blog.html"),
-#     # ("Contact", "/pages/contact.html"),
-# ]
+MENUITEMS = [
+    ("About", "/index.html"),
+    # ("Projects", "/pages/projects.html"),
+    ("CV", "/pages/CV.html"),
+    ("Blog", "/category/blog.html"),
+    # ("Contact", "/pages/contact.html"),
+]
 # ▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲
 
 LOAD_CONTENT_CACHE = False
 
 
-DISPLAY_PAGES_ON_MENU = True
-DISPLAY_CATEGORIES_ON_MENU = True
+DISPLAY_PAGES_ON_MENU = False
+DISPLAY_CATEGORIES_ON_MENU = False
 
 # where the source content is located
 PATH = "content"
