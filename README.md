@@ -49,7 +49,11 @@ output is a separate repo for website which is a git submodule. Also the theme i
 
 using markdown 
 - https://github.com/TheDigitalCatOnline/blog_source
+- https://github.com/mattmakai/fullstackpython.com
+- https://kevinyap.ca/
+- https://github.com/rust-lang/this-week-in-rust
 
-using rst
-  -  https://github.com/benhoff/blog
+
+using rst:
+  - https://github.com/benhoff/blog
   - https://github.com/getpelican/pelican-blog

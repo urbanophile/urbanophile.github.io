@@ -1,12 +1,11 @@
 Title: CV
 Author: Matt Gibson
-Summary: My CV
+Summary: "Experienced professional seeking job opportunities. Specialisations in machine learning, computer vision, and data analysis. Ph.D. in Computer Vision and Machine Learning. Proficient in Python, Tensorflow, Pytorch, and more."
 
 
 Looking for work. My email can be found on my github commits.
 
-### Experience
-
+## Experience
 
 - Contract Developer
 - Machine Learning Researcher
@@ -14,14 +13,14 @@ Looking for work. My email can be found on my github commits.
 - Data Scientist
 - Data Analyst
 
-### Education
+## Education
 
 
 - Ph.D. UNSW, CS (Computer Vision and Machine learning)
 - M.Sc. University of Sydney, Maths (Algebraic Combinatorics)
 - B.Sc. University of Auckland, Maths (H1) + Computation and Logic
 
-### Skills
+## Skills
 
 - Tools: Linux, Tensorflow, Pytorch
 - Techniques: Deep Learning, Computer Vision, Time Series

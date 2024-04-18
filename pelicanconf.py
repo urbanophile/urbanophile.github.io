@@ -13,21 +13,23 @@ SITESUBTITLE = "Artisanal Data and Software Gibbon"
 
 # configure automatically if using githubpages + custom domain
 SITEURL = ""
-DEBUG = True
-RELATIVE_URLS = True
 
 TIMEZONE = "Australia/Sydney"
 
 
-# ▼▼▼▼▼▼▼▼▼▼ OVERWRITTEN in publishconf.py ▼▼▼▼
+# configured automatically if using githubpages + custom domain
+SITEURL = "https://matthew-gibson.com"
+
 MENUITEMS = [
     ("About", "/index.html"),
-    # ("Projects", "/pages/projects.html"),
     ("CV", "/pages/CV.html"),
     ("Blog", "/category/blog.html"),
-    # ("Contact", "/pages/contact.html"),
 ]
+# ▼▼▼▼▼▼▼▼▼▼ OVERWRITTEN in publishconf.py ▼▼▼▼
+DEBUG = True
+RELATIVE_URLS = True
 # ▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲
+
 
 LOAD_CONTENT_CACHE = False
 
@@ -55,16 +57,9 @@ EXTRA_PATH_METADATA = {
     "extra/favicon.ico": {"path": "favicon.ico"},
 }
 
-SITEMAP = {
-    "format": "txt",
-    "priorities": {"articles": 0.5, "indexes": 0.5, "pages": 0.5},
-    "changefreqs": {"articles": "monthly", "indexes": "daily", "pages": "monthly"},
-}
-
-
-# IGNORE_FILES = ["drafts/*"]
 
 # #### URL settings ####
+
 # should mirror filesystem hierarchy
 # see: https://docs.getpelican.com/en/4.9.1/settings.html#url-settings
 PATH_METADATA = "(?P<path_no_ext>.*)\..*"  # don't fix this syntax warning
@@ -88,3 +83,22 @@ THEME = "themes/my-basic"
 # USER_LOGO_URL = SITEURL + "/images/ok_photo.JPG"
 # GOOGLE_ANALYTICS = "UA-36248181-1"
 # TAGLINE = "Code monkey who enjoys accumulating technical knowledge."
+
+
+TYPOGRIFY = True
+
+# #### Plugins - SEO ####
+# src: https://github.com/pelican-plugins/seo
+# pelicanconf.py or publishconf.py
+SEO_REPORT = True  # SEO report is enabled by default
+SEO_ENHANCER = True  # SEO enhancer is disabled by default
+SEO_ENHANCER_OPEN_GRAPH = True  # Subfeature of SEO enhancer
+SEO_ENHANCER_TWITTER_CARDS = False  # Subfeature of SEO enhancer
+
+
+# #### Plugins - Sitemap ####
+SITEMAP = {
+    "format": "txt",
+    "priorities": {"articles": 0.5, "indexes": 0.5, "pages": 0.5},
+    "changefreqs": {"articles": "monthly", "indexes": "daily", "pages": "monthly"},
+}

@@ -1,38 +1,68 @@
+@import url("normalize.css");
+
+/* ##########*/
+/* Defaults  */
+/* ##########*/
 
 :root {
   --my-monospace-code: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
 
-  --my-neo-grotesque: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
-  --my-text-color: hsl(205, 16%, 77%);
-  --my-bg-color: #11191f;
-  --my-link-color: navy;
-  --my-header-link-color: black;
-
-  --h1-color: hsl(205, 20%, 94%);
-  --h2-color: #e1e6eb;
-  --h3-color: hsl(205, 18%, 86%);
+  --my-neo-grotesque:  Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
 
 
-  --primary: hsl(195, 85%, 41%);
-  --primary-hover: hsl(195, 80%, 50%);
-  /* --primary-focus: rgba(16, 149, 193, 0.25); */
-  /* --secondary: hsl(205, 15%, 41%); */
-  --primary-visited: hsl(195, 85%, 31%);
+  --standard-border-radius: 5px;
 
+  --h1-font-size: 2em;
+  --h2-font-size: 1.512em;
+  --h3-size: 1.429em;
+  --base-font-size: 1em;
   --small-font-size: 75%;
 
-  --border: #ccc;
-  --standard-border-radius: 5px;
+/* 20px h4 font-size: 1.286em */
+/* 18px h5 font-size: 1.143em */
+/* 16px h6 font-size: 1em     */
+
+  /*------------*/
+  /* light mode */
+  /*------------*/
+  --text-primary: #11191f;
+  --text-secondary: #4e4e4e;
+  --text-active:#858585;  
+  --text-link: #0069c2;
+  --text-visited: #551a8b;
+
+  --bg-color:#fff;
+  --border: #cdcdcd;
+}
+
+/* Dark mode */
+.dark {
+
+  --text-primary: #fff;
+  --text-secondary: #cdcdcd;
+  --text-active: #858585;
+  --text-link: #8cb4ff;
+  --text-visited: #ffadff;
+
+  --bg-color: #11191f;
+  --border: #858585;
+}
+
+h1, h2, h3, nav {
+  font-family: var(--my-monospace-code);
+}
+nav a {
+  color: var(--text-secondary)
 }
 
 body {
-  font-family: var(--my-monospace-code);
+  font-family: var(--my-neo-grotesque);
 
   /* fluid sizing: https://frontaid.io/blog/fluid-typography-2d-css-locks-clamp/ */
   font-size: clamp(1em, 0.909em + 0.45vmin, 1.25em);
 
-  background-color: var(--my-bg-color);
-  color: var(--my-text-color);
+  background-color: var(--bg-color);
+  color: var(--text-primary);
 
   /* should be about 50-70 characters wide */
   max-width: 70ch;
@@ -42,96 +72,81 @@ body {
 
   /* shorthand for margin-left/margin-right */
   margin-inline: auto;
-
-    /* border: thin solid gray;
-    border-radius: 5px;
-    display: block; */
 }
 
 /* Typographical settings */
 h1, h2, h3 {
   line-height: 1.1rem;
   font-weight: 600;
-
+  letter-spacing: -0.032em;
+  color: var(--text-primary);
 }
 
 /* Headings */
 h1 {
-	font-size: 2em;
-  color: var(--h1-color);
+	font-size: var(--h1-font-size);
 }
 
 h2 {
-	font-size: 1.512em;
-  color: var(--h2-color);
+	font-size: var(--h2-font-size);
 }
 
-/* 22px */
 h3 {
-	font-size: 1.429em;
-  color: var(--h3-color);
+	font-size: var(--h3-size);
 }
-
-/* 20px */
-/* h4 {
-	font-size: 1.286em
-} */
-
-/* 18px */
-/* h5 {
-	font-size: 1.143em
-} */
-
-/* 16px */
-/* h6 {
-	font-size: 1em
-} */
-
 
 small, sub, sup {
   font-size: var(--small-font-size);
 }
 
+hr {
+  color: var(--border);
+
+}
+
+/* ################*/
 /* styling for nav */
-nav ul {
+/* ################*/
+nav {
+  justify-content: space-between;
+}
+
+nav, nav ul {
   display: flex;
-  margin: 0;
+  list-style-type: none;
   padding: 0;
-  list-style: none;
+  margin:0.5em 0em;
+
 }
 
-nav ul a {
-  padding: 0.5em 1em 0.5em 0;
+nav ul li {
+  padding: 0em 0.5em 0% 0;
   display: block;
-
+	font-size: var(--h2-font-size);
+  letter-spacing: -0.032em;
 }
 
-/* nav li {
-  border: 1px solid var(--border);
-  border-radius: var(--standard-border-radius);
-  margin: 0 0.5em;
-} */
+/* style the little logo box  in the nav */
+/* strong element should be the logo */
+nav ul li strong {
+  font-weight: 600;
+  color: var(--text-primary);
+}
 
-hgroup  h1  a:hover, hgroup  h1  a:visited, hgroup h1  a:link {
+nav  a:visited, nav a:link {
   text-decoration: none;
 }
 
-header a:link {
-  color: var(--h1-color);
+nav  a:hover {
+  color: var(--text-link);
   text-decoration: underline;
-}
-
-header a:hover,
-header a:visited {
-    color: var(--h1-color);
-    text-decoration: underline;
-    text-decoration-thickness: 0.1em;
+  text-decoration-thickness: 0.1em;
 }
 
 
 
 main a:link {
-    color: var(--primary);
+    color: var(--text-link);
     text-decoration: none;
 }
 
@@ -142,14 +157,10 @@ main a:hover {
 }
 
 main a:visited {
-  color: var(--primary-visited);
+  color: var(--text-visited);
   text-decoration: underline;
   text-decoration-thickness: 0.1em;
 }
-
-/* main article {
-  font-family: var(--my-neo-grotesque);
-} */
 
 /* styling for code */
 
@@ -157,7 +168,7 @@ main a:visited {
 /* for articles */
 article {
   padding: 0 0 0.75em 0;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid var(--border);
   margin-bottom: 0.75em;
 }
 
@@ -171,3 +182,42 @@ article footer {
   /* border-top: 1px solid #8a55a8; */
   padding-top: 0.5em;
 }
+
+address {
+  font-style: normal;
+}
+/* address and date should both be inline */
+article footer address, footer time {
+  display: inline;
+}
+footer {
+  font-size: var(--small-font-size);
+
+}
+
+/* styling buttons */
+
+/* cute nonsense for toggle darkmode */
+body.dark #moon{
+  display: none;
+}
+body:not(.dark) #sun{
+  display: none;
+}
+
+#theme-toggle svg {
+  height: 1.512em;
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+#theme-toggle {
+  background-color: var(--bg-color);
+  border: none;
+}
+
+#theme-toggle svg:hover {
+  color: var(--text-link);
+  border: none;
+}
+
