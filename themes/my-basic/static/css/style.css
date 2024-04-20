@@ -1,7 +1,7 @@
 @import url("normalize.css");
 
 /* ##########*/
-/* Defaults  */
+/* Vars      */
 /* ##########*/
 
 :root {
@@ -22,6 +22,10 @@
 /* 18px h5 font-size: 1.143em */
 /* 16px h6 font-size: 1em     */
 
+  /* this needs to be the same for dark and light */
+  --figure-background: #f8f8f8;
+
+
   /*------------*/
   /* light mode */
   /*------------*/
@@ -35,7 +39,9 @@
   --border: #cdcdcd;
 }
 
-/* Dark mode */
+/* ##################### */
+/* styling for darkmode  */
+/* ##################### */
 .dark {
 
   --text-primary: #fff;
@@ -48,12 +54,10 @@
   --border: #858585;
 }
 
-h1, h2, h3, nav {
-  font-family: var(--my-monospace-code);
-}
-nav a {
-  color: var(--text-secondary)
-}
+/* ####################### */
+/* styling for typography  */
+/* ####################### */
+
 
 body {
   font-family: var(--my-neo-grotesque);
@@ -104,9 +108,18 @@ hr {
 
 }
 
-/* ################*/
-/* styling for nav */
-/* ################*/
+/* ################ */
+/* styling for nav  */
+/* ################ */
+
+h1, h2, h3, nav {
+  font-family: var(--my-monospace-code);
+}
+nav a {
+  color: var(--text-secondary)
+}
+
+
 nav {
   justify-content: space-between;
 }
@@ -144,6 +157,9 @@ nav  a:hover {
 }
 
 
+/* ########################### */
+/* styling for main & article  */
+/* ########################### */
 
 main a:link {
     color: var(--text-link);
@@ -162,10 +178,9 @@ main a:visited {
   text-decoration-thickness: 0.1em;
 }
 
-/* styling for code */
 
+/* article */
 
-/* for articles */
 article {
   padding: 0 0 0.75em 0;
   border-bottom: 1px solid var(--border);
@@ -183,6 +198,12 @@ article footer {
   padding-top: 0.5em;
 }
 
+/* footer */
+
+footer {
+  font-size: var(--small-font-size);
+}
+
 address {
   font-style: normal;
 }
@@ -190,14 +211,20 @@ address {
 article footer address, footer time {
   display: inline;
 }
-footer {
-  font-size: var(--small-font-size);
 
+/* figure class */
+.figure {
+  margin: 0.5em 0;
+  background-color: var(--figure-background);
 }
 
-/* styling buttons */
 
-/* cute nonsense for toggle darkmode */
+
+
+/* ############################### */
+/* styling for dark toggle button  */
+/* ############################### */
+
 body.dark #moon{
   display: none;
 }
