@@ -9,7 +9,6 @@
 
   --my-neo-grotesque:  Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
 
-
   --standard-border-radius: 5px;
 
   --h1-font-size: 2em;
@@ -115,6 +114,7 @@ hr {
 h1, h2, h3, nav {
   font-family: var(--my-monospace-code);
 }
+
 nav a {
   color: var(--text-secondary)
 }
@@ -163,19 +163,23 @@ nav  a:hover {
 
 main a:link {
     color: var(--text-link);
-    text-decoration: none;
+    text-decoration: underline;
+
 }
 
-main a:hover {
-    color: var(--primary-hover);
-    text-decoration: underline;
-    text-decoration-thickness: 0.1em;
+main a:hover, main a:focus {
+    /* color: var(--primary-hover); */
+    /* text-decoration-thickness: 0.1em; */
+    text-decoration: none;
+
 }
 
 main a:visited {
   color: var(--text-visited);
   text-decoration: underline;
-  text-decoration-thickness: 0.1em;
+
+  /* text-decoration: underline; */
+  /* text-decoration-thickness: 0.1em; */
 }
 
 

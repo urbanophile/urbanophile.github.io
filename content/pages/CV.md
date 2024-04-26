@@ -1,6 +1,7 @@
 Title: CV
 Author: Matt Gibson
-Summary: "Experienced professional seeking job opportunities. Specialisations in machine learning, computer vision, and data analysis. Ph.D. in Computer Vision and Machine Learning. Proficient in Python, Tensorflow, Pytorch, and more."
+Summary: Experienced professional always open to opportunities. Ph.D. in Computer Vision and Machine Learning with practical experience.
+Save_as: cv.html
 
 
 Looking for work. My email can be found on my github commits.

@@ -21,8 +21,8 @@ TIMEZONE = "Australia/Sydney"
 SITEURL = "https://matthew-gibson.com"
 
 MENUITEMS = [
-    ("About", "/index.html"),
-    ("CV", "/pages/CV.html"),
+    ("About", "/about.html"),
+    ("CV", "/cv.html"),
     ("Blog", "/category/blog.html"),
 ]
 # ▼▼▼▼▼▼▼▼▼▼ OVERWRITTEN in publishconf.py ▼▼▼▼
@@ -98,7 +98,7 @@ SEO_ENHANCER_TWITTER_CARDS = False  # Subfeature of SEO enhancer
 
 # #### Plugins - Sitemap ####
 SITEMAP = {
-    "format": "txt",
+    "format": "xml",
     "priorities": {"articles": 0.5, "indexes": 0.5, "pages": 0.5},
     "changefreqs": {"articles": "monthly", "indexes": "daily", "pages": "monthly"},
 }
