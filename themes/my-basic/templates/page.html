@@ -1,20 +1,20 @@
-{% extends "content_list.html" %}
+{% extends "base.html" %}
 {% block html_lang %}{{ page.lang }}{% endblock %}
 
 {% block title %}{{ SITENAME|striptags }} - {{ page.title|striptags }}{%endblock%}
 
 {% block meta_desc %}
-<meta name="description" content="{{ page.summary|striptags }}" />
+<meta name="description" content="{{ page.summary|striptags|slice(140) }}" />
 {% endblock meta_desc %}
 
 
 {% block head %}
-{{ super() }}
+  {{ super() }}
 
-{% import 'translations.html' as translations with context %}
-{% if translations.entry_hreflang(page) %}
-{{ translations.entry_hreflang(page) }}
-{% endif %}
+  {% import 'translations.html' as translations with context %}
+  {% if translations.entry_hreflang(page) %}
+  {{ translations.entry_hreflang(page) }}
+  {% endif %}
 {% endblock %}
 
 {% block content %}

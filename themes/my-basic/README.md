@@ -1,6 +1,8 @@
 # About this theme
 
-Not really a theme, just web design really. 
+- index.html is mapped to blog/index.html
+- index.md uses the homepage.html template and maps to the root index.html
+- Not really a theme, just website structure. 
 
 ```
 ├── static

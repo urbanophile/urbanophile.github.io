@@ -36,6 +36,9 @@
 
   --bg-color:#fff;
   --border: #cdcdcd;
+
+  --code-background-color:#f9fafb;
+  --code-color:hsl(205, 10%, 50%);
 }
 
 /* ##################### */
@@ -50,7 +53,11 @@
   --text-visited: #ffadff;
 
   --bg-color: #11191f;
+  --bg-secondary:#fff;
   --border: #858585;
+
+  --code-background-color: #18232c;
+  --code-color:hsl(205, 10%, 50%);
 }
 
 /* ####################### */
@@ -70,6 +77,9 @@ body {
   /* should be about 50-70 characters wide */
   max-width: 70ch;
 
+    /* should be about 50-70 characters wide */
+  line-height: 1.3em;
+
   /* larger spacing on larger screens, very small spacing on tiny screens */
   padding: calc(1vmin + .5rem);
 
@@ -79,7 +89,7 @@ body {
 
 /* Typographical settings */
 h1, h2, h3 {
-  line-height: 1.1rem;
+  line-height: 2rem;
   font-weight: 600;
   letter-spacing: -0.032em;
   color: var(--text-primary);
@@ -202,6 +212,11 @@ article footer {
   padding-top: 0.5em;
 }
 
+article img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* footer */
 
 footer {
@@ -215,15 +230,46 @@ address {
 article footer address, footer time {
   display: inline;
 }
+/* ----- */
+/* code  */
+/* ----- */
+
+
+/* Pre and Code */
+pre {
+  background-color: var(--code-background-color);
+  display: block;
+  padding: 1em;
+  overflow-x: auto;
+  margin-top: 0px;
+  margin-bottom: 2.5rem;
+  font-size: 0.9em;
+}
+
+code, kbd, samp {
+  font-size: 0.9em;
+  padding: 0 0.5em;
+  background-color: var(--code-background-color);
+  white-space: pre-wrap;
+}
+
+pre > code {
+  padding: 0;
+  background-color: transparent;
+  white-space: pre;
+  font-size: 1em;
+}
+
+
+/* #################### */
+/* Some Utility classes */
+/* #################### */
 
 /* figure class */
 .figure {
   margin: 0.5em 0;
   background-color: var(--figure-background);
 }
-
-
-
 
 /* ############################### */
 /* styling for dark toggle button  */

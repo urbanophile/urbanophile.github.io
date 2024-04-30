@@ -1,24 +1,27 @@
 {% extends "base.html" %}
 {% block content %}
-{% block content_title %}
-<article>
-<h1> Welcome to my homepage </h1>
-{% endblock %}
+  {% block content_title %}
+  <h1>All Blog posts</h1>
+  {% endblock %}
 
-<p>
-👋 hi there, thanks for visiting. My name is Matt and I am a software / machine learning person in Sydney. I am an irregular blogger, this is mostly to order my thoughts. 
-</p>
 
-<p>The most recent mid content I wrote: </p>
-
-<dl>
-{% for article in dates[:4] %}
-    <dt>{{ article.locale_date }}</dt>
-    <dd><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></dd>
-{% endfor %}
-</dl>
-
-</article>
+  {% for article in articles %}
+  <article>
+    <header>
+      <h3><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{
+          article.title }}</a></h3>
+    </header>
+    <section>{{ article.summary }}</section>
+    <footer>
+      <p>Published: <time datetime="{{ article.date.isoformat() }}"> {{ article.locale_date }} </time></p>
+      <address>By
+        {% for author in article.authors %}
+        <a href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>
+        {% endfor %}
+      </address>
+    </footer>
+  </article>
+  {% endfor %}
 
 {% if articles_page.has_other_pages() %}
 {% include 'pagination.html' %}

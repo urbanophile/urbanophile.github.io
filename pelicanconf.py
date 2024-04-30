@@ -2,9 +2,9 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-########## IMPORTANT #################
-# this is only for local development #
-######################################
+########## IMPORTANT ###########################
+# some settings are only for local development #
+################################################
 
 # #### Basic settings ####
 AUTHOR = "Matt Gibson"
@@ -14,17 +14,17 @@ SITESUBTITLE = "Artisanal Data and Software Gibbon"
 # configure automatically if using githubpages + custom domain
 SITEURL = ""
 
-TIMEZONE = "Australia/Sydney"
 
-
-# configured automatically if using githubpages + custom domain
-SITEURL = "https://matthew-gibson.com"
-
+# #### Menu settings ####
 MENUITEMS = [
     ("About", "/about.html"),
     ("CV", "/cv.html"),
-    ("Blog", "/category/blog.html"),
+    ("Blog", "/blog/index.html"),
 ]
+DISPLAY_PAGES_ON_MENU = False
+DISPLAY_CATEGORIES_ON_MENU = False
+
+
 # ▼▼▼▼▼▼▼▼▼▼ OVERWRITTEN in publishconf.py ▼▼▼▼
 DEBUG = True
 RELATIVE_URLS = True
@@ -32,23 +32,23 @@ RELATIVE_URLS = True
 
 
 LOAD_CONTENT_CACHE = False
+DELETE_OUTPUT_DIRECTORY = True
 
 
-DISPLAY_PAGES_ON_MENU = False
-DISPLAY_CATEGORIES_ON_MENU = False
+# #### Path / URL config  ####
+PATH = "content"  # where the source content is located
+PAGE_PATHS = ["pages"]  # pages are standalone html
+ARTICLES_PATH = ["blog"]  # articles are arranged chronologically
 
-# where the source content is located
-PATH = "content"
+# where the output is saved
+ARTICLE_URL = "blog/{slug}.html"
+ARTICLE_SAVE_AS = "blog/{slug}.html"
+INDEX_SAVE_AS = "blog/index.html"
 
-# pages are standalone html
-PAGE_PATHS = ["pages"]
-
-# articles are arranged chronologically
-ARTICLES_PATH = ["Blog"]
-
+# #### Metadata ####
 DEFAULT_LANG = "en"
 DEFAULT_DATE_FORMAT = "%Y %B %d"
-
+TIMEZONE = "Australia/Sydney"
 
 # #### Static Assets ####
 STATIC_PATHS = ["images", "extra/robots.txt"]
@@ -57,6 +57,10 @@ EXTRA_PATH_METADATA = {
     "extra/favicon.ico": {"path": "favicon.ico"},
 }
 
+CATEGORIES_SAVE_AS = ""
+CATEGORY_SAVE_AS = ""
+TAG_SAVE_AS = ""
+TAGS_SAVE_AS = ""
 
 # #### URL settings ####
 
@@ -78,13 +82,42 @@ AUTHOR_FEED_RSS = None
 
 
 # #### Theme settings ####
-# THEME = "notmyidea"
 THEME = "themes/my-basic"
-# USER_LOGO_URL = SITEURL + "/images/ok_photo.JPG"
-# GOOGLE_ANALYTICS = "UA-36248181-1"
-# TAGLINE = "Code monkey who enjoys accumulating technical knowledge."
 
+# ##################
+# #### Plugins  ####
+# ##################
 
+# #### Plugins - Markdown ####
+MARKDOWN = {
+    "extension_configs": {
+        "markdown.extensions.codehilite": {"css_class": "highlight"},
+        "markdown.extensions.extra": {},
+        "markdown.extensions.meta": {},
+        "markdown.extensions.toc": {
+            "marker": "[TableOfContents]",
+            "title": "Table of Contents",
+            "anchorlink": True,
+            "permalink": True,
+            "baselevel": 2,
+        },
+    },
+    "output_format": "html5",
+}
+
+# MARKDOWN = {
+#     "extension_configs": {
+#         "markdown.extensions.toc": {
+#             "marker": "[TableOfContents]",
+#             "title": "Table of Contents",
+#             "anchorlink": True,
+#             "permalink": True,
+#             "baselevel": 2,
+#         }
+#     }
+# }
+
+# #### Plugins - Typogrify ####
 TYPOGRIFY = True
 
 # #### Plugins - SEO ####

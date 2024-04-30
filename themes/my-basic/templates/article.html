@@ -4,7 +4,7 @@
 {% block title %}{{ SITENAME|striptags }} - {{ article.title|striptags }}{% endblock %}
 
 {% block meta_desc %}
-<meta name="description" content="{{ article.summary|striptags }}" />
+<meta name="description" content="{{ article.summary|striptags|slice(140) }}" />
 {% endblock meta_desc %}
 
 
@@ -16,9 +16,9 @@
 {{ translations.entry_hreflang(article) }}
 {% endif %}
 
-{% if article.description %}
-<meta name="description" content="{{article.description}}" />
-{% endif %}
+<!-- {% if article.description %}
+<meta name="description" content="{{article.description }}" />
+{% endif %} -->
 
 {% for tag in article.tags %}
 <meta name="tags" content="{{tag}}" />

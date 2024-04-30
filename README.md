@@ -9,6 +9,10 @@ Look at this for info on
   - let cloudflare handle HTTPS and certificates (not github pages)
   - ~~remember the `CNAME` file in `content/extra/` and the CNAME config in `pelicanconf.py`. [Relevant pelican docs](https://docs.getpelican.com/en/latest/tips.html#copy-static-files-to-the-root-of-your-site).~~
 
+
+helpful utilities:
+  - [squash images](https://squoosh.app/editor)
+
 ## Build dev site
 
 Build using the dev settings with
