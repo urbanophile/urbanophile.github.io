@@ -22,10 +22,12 @@
 
     {{ page.content }}
     <dl>
-    {% for article in dates[:4] %}
-        <dt>{{ article.locale_date }}</dt>
-        <dd><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></dd>
-    {% endfor %}
+    <ul>
+    {% for article in dates[:4] -%}
+        <li><dt>{{ article.date.strftime('%Y-%m-%d') }}</dt><dd><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></dd>
+        </li>
+    {%- endfor %}
+    </ul>
     </dl>
 
     </article>

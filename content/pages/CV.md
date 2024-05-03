@@ -1,10 +1,11 @@
 Title: CV
 Author: Matt Gibson
-Summary: Experienced professional always open to opportunities. Ph.D. in Computer Vision and Machine Learning with practical experience.
+Summary: Experienced professional open to opportunities. Ph.D. in Computer Vision and Machine Learning with practical experience.
 Save_as: cv.html
 
+![A bad photo of me in my darkest days]({attach}../images/vanitas_detail.png)
 
-Looking for work. My email can be found on my github commits.
+My email can be found on my github commits.
 
 ## Experience
 
