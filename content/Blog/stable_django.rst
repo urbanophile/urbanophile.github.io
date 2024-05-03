@@ -4,6 +4,11 @@ How good is Django?
 :date: 2024-03-31
 :authors: Matt Gibson
 
+.. raw:: HTML
+
+    <img src="{static}/images/django_reinhardt.png" alt="It's Django Reinhardt, not Django the web framework"></img>
+
+
 
 A brief riff on stable, mature tools. I've been playing around recently with a little project involving recommender systems. Anyway, for the website, I ended up reaching for `Django <https://www.djangoproject.com/>`_. Man, it's been over a year since I've done any Django projects, but I forgot how joy it is to use it. The documentation is excellent. The platform is pretty stable and very mature. There's a lot of useful packages and integrations: `DRF <https://github.com/encode/django-rest-framework>`_, `Celery <https://docs.celeryq.dev/en/stable/django/first-steps-with-django.html>`_, the `debug toolbar <https://github.com/jazzband/django-debug-toolbar>`_, `allauth <https://github.com/pennersr/django-allauth>`_, `wagtail <https://github.com/wagtail/wagtail>`_, `haystack (for search) <https://django-haystack.readthedocs.io/en/master/>`_ etc etc.   for It's just lovely, usable technology, and I feel old saying this, but I value that more and more. In my PhD, I had some unpleasant experiences with a rapidly changing landscape for software in AI and ML, and it made me value stability a whole lot more. Let us never talk about NVIDIA drivers on linux or nouveau. 
 

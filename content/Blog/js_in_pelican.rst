@@ -6,6 +6,10 @@ Embedding js in pelican
 :authors: Matt Gibson
 :modified: 2024-04-04
 
+.. raw:: HTML
+
+    <img src="{static}/images/pious_pelican.png" alt="The pelican "></img>
+
 
 Sometimes I like to  write a little js in my blog posts. Here is an example of how to embed a javascript file in a pelican article.
 

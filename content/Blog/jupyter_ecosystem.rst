@@ -5,6 +5,10 @@ The Wild West of Jupyter
 :authors: Matt Gibson
 :modified: 2024-04-20 18:59
 
+.. raw:: HTML
+
+    <img src="{static}/images/abduction_of_europa.png" alt="The abduction of Europa. Jupiter is the one with the horns."></img>
+
 There's some wacky stuff in the Jupyter ecosystem. Still, one thing that really stood out for me was the extension of Jupyter notebooks into web development and their interaction with the JavaScript ecosystem. So web assembly is a thing, and you can run C and Rust code inside little isolated JavaScript sandboxes instances, maybe even from `your CDN <https://developers.cloudflare.com/workers/languages/rust/>`_, so of course you want to compile `Python in WASM <https://pyodide.org/en/stable/>`_. Now you're wondering, didn't Jupyter do some fancy refactoring a while ago? I wonder if I can put a webserver up there, too...
 
 
@@ -12,11 +16,11 @@ Behold `JupyterLite <https://jupyterlite.readthedocs.io/en/latest/quickstart/emb
 
 .. raw:: HTML
 
- <iframe
- src="https://jupyterlite.github.io/demo/repl/index.html?kernel=python&code=print('hello world')"
- width="100%"
- height="100%"
- ></iframe>
+    <iframe
+    src="https://jupyterlite.github.io/demo/repl/index.html?kernel=python&code=print('hello world')"
+    width="100%"
+    height="100%"
+    ></iframe>
 
 Wow! Just what you always wanted: free notebook hosting! you can install packages, you can code, powered by this:
 

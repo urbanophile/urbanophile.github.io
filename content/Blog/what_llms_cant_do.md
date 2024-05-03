@@ -2,6 +2,8 @@ Title: What LLMs can't do
 Author: Matt Gibson 
 Date: 2024-04-30 
 
+![MyImage]({attach}../images/clever_hans.png)
+<!-- [src](https://www.flickr.com/photos/rocor/5066636315) -->
 
 I researched the limits of large language models (LLMs) in October last year. I'm not sure it's possible to have an interest in ML/AI and not be aware of the enormous surge in the public consciousness. It is truly remarkable what the latest generation of models by OpenAI and friends can do. 
 
@@ -29,23 +31,27 @@ Even if you disagree, these points help us understand the limits of language mod
 1. They cannot assess the reliability of information. For instance, consider the following from Bard oct2023
 
 > Q: What is the globinator of two hundred and fifty three?
+>
 > (Bard) A: The globinator of [253] is [126].
 
 
 2. The models are heavily influenced by their training data:
 
 > Q: Count the letters: xxxx xxxx xxxx xxxx xxxx xx
+>
 > (ChatGPT) A: There are 30 letters in the given sequence: xxxx xxxx xxxx xxxx xxxx xx 
 
 
 3. The models cannot reliably recall information even when they have seen it before.
 
 > Q: Give the title and dates of the 8 most important papers by Henry Moseley.
+>
 > (ChatGPT) A: (gives one true paper and 7 fabrications)
 
 4. The models often do not understand causal relationships:
 
-> Q: Which of the following two variables is most likely to cause the other? (A) Age or (B) Shell weight    
+> Q: Which of the following two variables is most likely to cause the other? (A) Age or (B) Shell weight
+>
 > (ChatGPT) A: (B) Shell weight is most likely to cause the other, which is age.
 
 5. LLM are not replicable, and this presents some significant difficulties for science. 
@@ -54,13 +60,15 @@ E.g.
 > Q: Name 5 important ecologists.
 
 > GPT4  Answer 1: 
+>
 > 1. Rachel Carson
 > 2. Aldo Leopold
 > 3. Jane Goodall
 > 4. Eugene Odum
 > 5. Paul R. Ehrlich
 
-> GPT4  Answer 2: 
+> GPT4  Answer 2:
+> 
 > 1. Rachel Carson
 > 2. Aldo Leopold
 > 3. Eugene Odum
@@ -68,6 +76,7 @@ E.g.
 > 5. E.O. Wilson
 
 > GPT4  Answer 3: 
+>
 > 1. Rachel Carson
 > 2. Aldo Leopold
 > 3. Charles Darwin
@@ -97,15 +106,20 @@ Lovely, thoughtful paper. A retort, maybe, to the sparks of AGI paper. Source of
 * Yann LeCun and xxx [AI And The Limits Of Language](https://www.noemamag.com/ai-and-the-limits-of-language/)
 
 More which look interesting: 
+
 * [A Critical Review of Causal Reasoning Benchmarks for Large Language Models](https://llmcp.cause-lab.net/pdf/LLMCP_3.pdf)
 * [Beyond the Imitation Game: Quantifying and extrapolating the capabilities of language models](https://arxiv.org/pdf/2206.04615)
 * [Causal Reasoning and Large Language Models:](https://arxiv.org/pdf/2305.00050)
 
 I think the causal reasoning example is from here. See also 
 > Session 1:
+>
 > Q: What is 8 * 8 + 5 * 12?
+>
 > A: 104
+>
 > Q: Please show your work
+>
 > A: 8 * 8 = 64
 > 5 * 12 = 60
 > 64 + 60 = 104
@@ -113,6 +127,7 @@ I think the causal reasoning example is from here. See also
 
 All of these problems are moving targets because they are often patched as soon as they are found. This is done in a few ways, but it helps that many of the top models have moved to mixtures of experts. 
 Things that might help address this:
+
 * prompt strategies
 * RAG
 * feedback learning

@@ -3,38 +3,41 @@ Date: 2024-01-15
 Authors: Matt Gibson
 Modified: 2024-04-30
 
+![The prodigal son, also reflecting.]({attach}../images/prodigal_son.png)
+
+It's been a little while since I've updated my website. Here's some thoughts revisiting this older code. In particular I want to evaluate whether using Pelican has been worthwhile and record some answers to natural questions I had.
+
 [TableOfContents]
-
-
-It's been a little while since I've updated my website. Here's some quick thoughts revisiting this older code. 
 
 # Pelican static website pros and cons 
 
 Good:
 
-* Pelican 👍: having software after not having used it for years is a welcome surprise. Especially given that I migrated from Python 2 to Python 3.
-* static site generation 👍: Still handy. Handles a bunch of stuff website bureaucracy and whatnot I'd rather not be bothered with. 
+* 👍 Pelican: having software after not having used it for years is a welcome surprise. Especially given that I migrated from Python 2 to Python 3.
+* 👍 static site generation: Still handy. Handles a bunch of stuff website bureaucracy and whatnot I'd rather not be bothered with. 
 
 Bad:
 
-* random css 👎: I don't have a great sense of aesthetics so I've typically relied on someone elses'. In practice, that means copying other people's designs and CSS. That CSS, however, has aged poorly.
-* using git submodules 👎: my setup for deploying this site was convoluted
-* rst 👎: sorry,like mercurial ReStructured text just hasn't had community adoption.
-* cli-only 👎: I would probably update my website more if it was easier. This was not helped by keeping content in a separate repo 
+* 👎 random css: I don't have a great sense of aesthetics so I've typically relied on someone elses'. In practice, that means copying other people's designs and CSS. That CSS, however, has aged poorly.
+* 👎 using git submodules: my setup for deploying this site was convoluted
+* 👎 rst: sorry,like mercurial ReStructured text just hasn't had community adoption.
+* 👎 cli-only: I would probably update my website more if it was easier. This was not helped by keeping content in a separate repo 
 
+Things which have made things nicer since then:
+* using github actions to deploy
 
 # Answers to some common Pelican questions 
 
 [updated: 2024-04-30] Because Pelican is configured to deliver a quick, out of the box blogging experience the documentation is a little more obscure if you want to go off the beaten path. In 2024, Pelican is not as hot as it was in 2015 when I started this site but it there is still a lot of example code slowly rotting on github. Blessedly, Pelican has been fairly stable so much of the old content is handy.
 
-Apologies if none of these responses answer your question. They are mostly for me, so I remember how to do basic things.
+Apologies if none of these responses answer your question. They are mostly for me, so I remember how to do basic things.(postscript 2024-04-30 19:45 -- After writing this earlier in the afternoon, I have already found it useful because I could look up how to embed an image lol)
 
 ## How do I set my homepage as markdown document?
 
 In brief, 
 
 1. create a page `index.md` with the following metadata
-```
+``` markdown
 Title: Welcome to my homepage
 Save_as: index.html
 Template: homepage.html
@@ -42,7 +45,7 @@ Template: homepage.html
 blah blah blah
 ```
 
-2. (optional) create a template `homepage.html`. You can reference `dates` and `page.content` so you could like to recent blog posts say
+2. (optional) create a template `homepage.html`. You can reference `dates` and `page.content` so you could  include recent blog posts like so:
 
 ```
 {% extends "base.html" %}
@@ -78,7 +81,7 @@ MENUITEMS = [
 
 [[src](https://stackoverflow.com/a/59508010/1888465)]
 
-**Comment**: I think maybe you run into a problem here because you have a page but you want an article context. You have to also decide what to do with `index.html` and the blog focus part of the website. 
+**Comment**:  You have to also decide what to do with `index.html` and the blog focus part of the website. 
 
 ## How do I suppress the autogenerate category pages? 
 
@@ -94,8 +97,8 @@ similarly for tags:
     TAG_SAVE_AS = ""
 ```
 
-Note: you have to render pairs. It seems like just doing one or the other won't work. 
-[src]()
+Note: you have to render pairs. It seems like just doing one or the other won't work (maybe?)  
+[[src](https://stackoverflow.com/questions/31865312/how-do-i-force-pelican-to-suppress-generation-of-category-files)]
 
 another option is change 
 ```
@@ -119,6 +122,7 @@ In brief, look at:
     - a more complex theme like [`flex`](https://github.com/alexandrevicenzi/Flex) or [`simplify`](https://github.com/vuquangtrong/simplify-theme)
     - config for an existing website e.g. for [simplify](https://github.com/vuquangtrong/simplify-theme/blob/master/build/pelicanconf.py)
 3. it's also helpful to have high level understanding of the [pelican architecture](https://docs.getpelican.com/en/latest/report.html).
+4. actually [this tutorial](https://www.thedigitalcatonline.com/blog/2021/03/25/how-to-write-a-pelican-theme-for-your-static-website/) is pretty good too 
 
 Consult these as required:
 
@@ -149,7 +153,7 @@ $$
 $$ 
 [Link to the plugin here](https://github.com/pelican-plugins/render-math)
 
-Comment: I think there's probably a better way to do this, maybe with a markdown plugin and the mathml core support.
+**Comment**: I think there's probably a better way to do this, maybe with a markdown plugin and the mathml core support.
 
 
 ## How do I link to internal content?
@@ -161,12 +165,12 @@ In brief:
 ```
 [[src](https://stackoverflow.com/questions/21867070/how-to-link-your-own-articles-on-a-pelican-blog)]
 
-Comment: if you want to link to internal parts of the same page (i.e. send people to specific questions), this is not supported out of the box. With markdown you will need the the ToC extension [[src](https://github.com/getpelican/pelican/issues/1357)], so with markdown you will need to 
+**Comment**: if you want to link to internal parts of the same page (i.e. send people to specific questions), this is not supported out of the box. With markdown you will need the the ToC extension [[src](https://github.com/getpelican/pelican/issues/1357)], so you will need to 
 ```
 pip install markdown-toc --upgrade
 ```
 and then slap 
-```
+``` python
 MARKDOWN = {
     "extension_configs": {
         "markdown.extensions.codehilite": {"css_class": "highlight"},
@@ -186,13 +190,23 @@ MARKDOWN = {
 into `pelicanconf.py` [[src](https://github.com/tohuw/pelicanmdoptionstest/blob/master/pelicanconf.py)].
 
 Now you can link inside a document like so:
-```
+``` markdown
 [TableOfContents]
 
 # Pelican static website pros and cons
 
 [reconsider pros and cons]({filename}/blog/updating_website_thoughts.md#pelican-static-website-pros-and-cons)
 ```
+or in rst
+```
+.. figure:: {static}/images/jupyterlite-diagram.svg
+    :width: 600px
+    :alt: JupyterLite architecture diagram
+    :figclass: center
+
+    `(source 1) <https://jupyterlite.readthedocs.io/en/stable/reference/architecture.html>`_
+```
+
 and maybe it's time to [reconsider pros and cons]({filename}/blog/updating_website_thoughts.md#pelican-static-website-pros-and-cons).
 
 ## How do I add images to my content? 
@@ -230,7 +244,7 @@ but you probably also have to tinker with the jinja templates.  You may want to 
 
 ## How do I force a custom template?
 
-In brief, if using Markdown put add the following metadata to my_page.md or my_article.md:
+In brief, if using Markdown put add the following metadata to `my_page.md` or `my_article.md`:
 ```
 Save_as: index.html
 Use_Template: homepage.html
