@@ -1,5 +1,20 @@
 @import url("normalize.css");
 
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+ audio,
+ canvas,
+ iframe,
+ img,
+ svg,
+ video {
+   vertical-align: middle;
+ }
+
 /* ##########*/
 /* Vars      */
 /* ##########*/
@@ -34,11 +49,13 @@
   --text-link: #0069c2;
   --text-visited: #551a8b;
 
-  --bg-color:#fff;
+  --bg-primary:#fff;
   --border: #cdcdcd;
 
-  --code-background-color:#f9fafb;
-  --code-color:hsl(205, 10%, 50%);
+  --bg-secondary: ;
+
+  --code-background-color: #f9fafb;
+  --code-color: hsl(205, 10%, 50%);
 }
 
 /* ##################### */
@@ -52,8 +69,8 @@
   --text-link: #8cb4ff;
   --text-visited: #ffadff;
 
-  --bg-color: #11191f;
-  --bg-secondary:#fff;
+  --bg-primary: #11191f;
+  --bg-secondary:#131d25;
   --border: #858585;
 
   --code-background-color: #18232c;
@@ -71,7 +88,7 @@ body {
   /* fluid sizing: https://frontaid.io/blog/fluid-typography-2d-css-locks-clamp/ */
   font-size: clamp(1em, 0.909em + 0.45vmin, 1.25em);
 
-  background-color: var(--bg-color);
+  background-color: var(--bg-primary);
   color: var(--text-primary);
 
   /* should be about 50-70 characters wide */
@@ -194,11 +211,20 @@ main a:visited {
 
 
 /* article */
-
 article {
   padding: 0 0 0.75em 0;
   border-bottom: 1px solid var(--border);
   margin-bottom: 0.75em;
+}
+
+article header span{
+  font-size: var(--small-font-size);
+}
+article header h3{
+  margin: 0em 0  0 0 ; 
+}
+article header {
+  margin: 1.5em 0 1em 0; 
 }
 
 article p {
@@ -225,11 +251,29 @@ footer {
 
 address {
   font-style: normal;
-}
-/* address and date should both be inline */
-article footer address, footer time {
   display: inline;
 }
+
+ dl dt, dl dd {
+  display: inline;
+}
+
+/* block quotes */
+blockquote {
+  margin-inline-start: 2rem;
+  margin-inline-end: 0;
+  margin-block: 2rem;
+  padding: 0.4rem 0.8rem;
+  color: var(--text-light);
+  font-style: italic;
+}
+
+
+
+/* address and date should both be inline
+article footer address, footer time {
+  display: inline;
+} */
 /* ----- */
 /* code  */
 /* ----- */
@@ -260,6 +304,49 @@ pre > code {
   font-size: 1em;
 }
 
+/* form styling  */
+/* source: simple.css */
+textarea,
+select,
+input,
+button,
+.button {
+  font-size: inherit;
+  font-family: inherit;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: var(--standard-border-radius);
+  box-shadow: none;
+  max-width: 100%;
+  display: inline-block;
+}
+textarea,
+select,
+input {
+  color: var(--text);
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border);
+}
+label {
+  display: block;
+}
+textarea:not([cols]) {
+  width: 100%;
+}
+
+/* Makes input fields wider on smaller screens */
+/* @media only screen and (max-width: 720px) {
+  textarea,
+  select,
+  input {
+    width: 100%;
+  }
+} */
+
+fieldset {
+  border: 0;
+}
+
 
 /* #################### */
 /* Some Utility classes */
@@ -270,6 +357,16 @@ pre > code {
   margin: 0.5em 0;
   background-color: var(--figure-background);
 }
+
+/* Classes for notices */
+.notice {
+  background: var(--bg-secondary);
+  border: 2px solid var(--border);
+  border-radius: var(--standard-border-radius);
+  padding: 1.5rem;
+  margin: 2rem 0;
+}
+
 
 /* ############################### */
 /* styling for dark toggle button  */
@@ -283,14 +380,18 @@ body:not(.dark) #sun{
 }
 
 #theme-toggle svg {
-  height: 1.512em;
+  /* height: 1.512em; */
   color: var(--text-primary);
   cursor: pointer;
+  vertical-align: baseline;
+
 }
 
 #theme-toggle {
-  background-color: var(--bg-color);
+  background-color: var(--bg-primary);
   border: none;
+  padding: 0;
+  margin: 0;
 }
 
 #theme-toggle svg:hover {

@@ -79,6 +79,8 @@ AUTHOR_FEED_RSS = None
 
 
 # DEFAULT_PAGINATION = 10
+SUMMARY_MAX_LENGTH = 40
+SUMMARY_END_SUFFIX = "…"
 
 
 # #### Theme settings ####
