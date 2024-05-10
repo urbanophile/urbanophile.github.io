@@ -3,6 +3,7 @@ How good is Django?
 
 :date: 2024-03-31
 :authors: Matt Gibson
+:tags: django, dokuwiki, tools
 
 .. raw:: HTML
 

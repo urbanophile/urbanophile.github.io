@@ -2,9 +2,10 @@ Embedding js in pelican
 #########################
 
 :date: 2024-01-22
-:tags: pelican, javascript, chart.js
+:tags: pelican, javascript
 :authors: Matt Gibson
 :modified: 2024-04-04
+:tags: pelican, javascript
 
 .. raw:: HTML
 

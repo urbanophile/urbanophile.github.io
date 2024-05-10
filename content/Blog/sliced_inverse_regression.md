@@ -1,6 +1,7 @@
 Title: Sliced Inverse Regression
 Author: Matt Gibson
 Date: 2024-04-18 
+Tags: statistics, machine learning
 
 ![MyImage]({attach}../images/cake_slice.png)
 [src](https://www.flickr.com/photos/rocor/5066636315)
