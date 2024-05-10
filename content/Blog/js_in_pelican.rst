@@ -5,7 +5,7 @@ Embedding js in pelican
 :tags: pelican, javascript
 :authors: Matt Gibson
 :modified: 2024-04-04
-:tags: pelican, javascript
+
 
 .. raw:: HTML
 

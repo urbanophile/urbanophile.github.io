@@ -164,6 +164,8 @@ power flow study
 
 https://docs.mosek.com/slides/2018/dtu-electric/talk.pdf
 
+
+
 ### prototypical problems II: Unit commitment problem 
  a mixed-integer conic quadratic optimization problem
 
@@ -179,6 +181,8 @@ https://nbviewer.org/github/MOSEK/Tutorials/blob/master/unitcommitment/ucp.ipynb
 * merit order production
 * Economic Dispatch  https://ampl.com/mo-book/notebooks/09/economicdispatch.html
 https://ampl.com/mo-book/notebooks/04/power-network.html
+
+* https://colab.research.google.com/github/Gurobi/modeling-examples/blob/master/electrical_power_generation/electrical_power_1.ipynb
 
 ### prototypical problems III: resource planning 
 
