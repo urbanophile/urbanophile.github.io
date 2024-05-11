@@ -2,6 +2,7 @@ Title: An Energetic Exposition: notes about electricity markets
 Date: 2024-05-08
 Authors: Matt Gibson
 
+![Melbourne Terminal substation]({attach}../images/daniell_cell.png)
 
 Electricity markets are can be quite complex. They have many features which are atypical of other commodity markets, and are not frequently discussed in econ 101. For instance, my microeconomics textbooks has nearly three chapters on the environment, pollution and natural resources (it's a bit lefty) but has a single reference to energy and none to electricity. For the record, there point is that in 2009 renewables were subsidised to the tune of 4 billion USD, while fossil fuels were subsidised to the tune of 550 billion USD (yikes). 
 
