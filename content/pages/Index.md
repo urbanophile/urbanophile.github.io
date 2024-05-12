@@ -11,10 +11,10 @@ Template: homepage
 ![Detail from Anni Albers]({attach}../images/anni_albers_detail.png)
 
 
-  <form id="subscribeInfo" class="notice" >
+  <form id="subscribeInfo" class="notice gentle-flex" >
   <p>Crave tepid content? Subscribe to my monthly newsletter below! <small>It's just the blog</small></p>
     <fieldset id="formCtrls">
-      <label for="email">Email</label>
+      <label style="display:inline" for="email">Email</label>
         <input id="email" name="email" type="email" autocomplete="email" placeholder="eripley@nostromo.com" required />
       <button value="Submit" type="submit" >Submit</button>
     </fieldset>
