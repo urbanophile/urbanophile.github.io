@@ -4,16 +4,11 @@ Authors: Matt Gibson
 
 ![Melbourne Terminal substation]({attach}../images/daniell_cell.png)
 
-Electricity markets are can be quite complex. They have many features which are atypical of other commodity markets, and are not frequently discussed in econ 101. For instance, my microeconomics textbooks has nearly three chapters on the environment, pollution and natural resources (it's a bit lefty) but has a single reference to energy and none to electricity. For the record, there point is that in 2009 renewables were subsidised to the tune of 4 billion USD, while fossil fuels were subsidised to the tune of 550 billion USD (yikes). 
+Electricity markets can be quite complex. They have many features which are rarely discussed in econ 101. For instance, my microeconomics textbook has three chapters on the environment, pollution and natural resources (it’s a bit lefty) but has a single reference to energy and none to electricity. Let me clarify that in 2009, the subsidy for renewables amounted to 4 billion USD, while fossil fuels received an astonishing subsidy of 550 billion USD.
 
 ## some history 
 
-It is banal to observe that electricity is ever present in modern life, yet we reflect rarely on it. We might say that there are historical three major applications which have driven the mass-adoption of electricity:
-1. lighting 
-2. electric engine
-    - our primary engine with which we are familiar is the the ICE engine, but electrice engines made the impact for manufacturing first and then to consumer devices. We use the mechanical energy from an electric energy directly in a washingmachine or drill. But indirectly through the motor in the compressor forcing coolant through a heat exchange in  a refrigerator be it a our home fridge or aircon system. 
-3. portability of energy
-    - surprising, as I think of internal combustion engines as the primary mode of transport for most of the 20th century, but this is very passsenger centric. A very popular mode of transport (for goods, not people) has been the diesel trains or more properly, diesel-electric transmissions. These use diesel engines to generate electricity which is then used to power electric motors. Historical popular with trains, ships and submarines.
+It is trite to note that electricity is always present in modern life, yet we infrequently contemplate it. We might say that there are historical three major applications which have driven the mass-adoption of electricity:1. lighting 2. electric engine - our primary engine with which we are familiar is the ICE engine, but electric engines made the impact on manufacturing first and then to consumer devices. We use the mechanical energy from an electric energy in a washing machine or drill. But indirectly through the motor in the compressor forcing coolant through a heat exchange in a refrigerator, be it our home fridge or air-con system. 3. portability of energy - surprising, as I think of internal combustion engines as the primary mode of transport for most of the 20th century, but this is very passenger centric. A very popular mode of transport (for goods, not people) has been the diesel trains or, more properly, diesel-electric transmissions. These use diesel engines to generate electricity, which is then used to power electric motors which have been popular with trains, ships and submarines.
 
 
 ## generation and usage
