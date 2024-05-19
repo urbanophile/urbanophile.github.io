@@ -2,7 +2,7 @@ Title: Demystifying Battery Technology
 Date: 2024-05-11
 Authors: Matt Gibson
 
-![MyImage]({Illustration of Daniell cell}../images/daniell_cell.png)
+![Illustration of Daniell cell]({attach}../images/daniell_cell.png)
 
 This is a quick primer to key aspects of batteries for someone like me who knows a little about software but not very much about electrical engineering, power systems or embedding programming. 
 
@@ -100,5 +100,6 @@ Although we briefly discuss other battery chemistries for context, lithium ion b
 # Batteries and Computing
 
 # References
+
 * https://batteryuniversity.com/
 * https://chem.libretexts.org/Courses/University_of_Arkansas_Little_Rock/Chem_1403%3A_General_Chemistry_2/Text/19%3A_Electron_Transfer_Reactions/19.03%3A_Electrochemical_Cells
