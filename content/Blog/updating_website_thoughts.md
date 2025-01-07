@@ -195,7 +195,7 @@ Now you can link inside a document like so:
 
 # Pelican static website pros and cons
 
-[reconsider pros and cons]({filename}/blog/updating_website_thoughts.md#pelican-static-website-pros-and-cons)
+<!-- [reconsider pros and cons]({filename}/blog/updating_website_thoughts.md#pelican-static-website-pros-and-cons) -->
 ```
 or in rst
 ```
@@ -207,7 +207,7 @@ or in rst
     `(source 1) <https://jupyterlite.readthedocs.io/en/stable/reference/architecture.html>`_
 ```
 
-and maybe it's time to [reconsider pros and cons]({filename}/blog/updating_website_thoughts.md#pelican-static-website-pros-and-cons).
+and maybe it's time to reconsider pros and cons.
 
 ## How do I add images to my content? 
 

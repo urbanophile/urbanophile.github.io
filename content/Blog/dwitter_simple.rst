@@ -3,7 +3,7 @@ Two simple dweets
 
 :date: 2024-02-29
 :authors: Matt Gibson
-.. :tags: graphics, javascript, demoscene
+:tags: graphics, javascript, demoscene
 
 
 

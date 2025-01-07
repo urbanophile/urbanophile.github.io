@@ -101,5 +101,5 @@ Although we briefly discuss other battery chemistries for context, lithium ion b
 
 # References
 
-* https://batteryuniversity.com/
-* https://chem.libretexts.org/Courses/University_of_Arkansas_Little_Rock/Chem_1403%3A_General_Chemistry_2/Text/19%3A_Electron_Transfer_Reactions/19.03%3A_Electrochemical_Cells
+* [Battery University](https://batteryuniversity.com/)
+* [Basic description of battery chemistry](https://chem.libretexts.org/Courses/University_of_Arkansas_Little_Rock/Chem_1403%3A_General_Chemistry_2/Text/19%3A_Electron_Transfer_Reactions/19.03%3A_Electrochemical_Cells)
