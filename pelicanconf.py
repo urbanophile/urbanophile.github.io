@@ -57,10 +57,10 @@ EXTRA_PATH_METADATA = {
     "extra/favicon.ico": {"path": "favicon.ico"},
 }
 
-CATEGORIES_SAVE_AS = ""
-CATEGORY_SAVE_AS = ""
-TAG_SAVE_AS = ""
-TAGS_SAVE_AS = ""
+# CATEGORIES_SAVE_AS = ""
+# CATEGORY_SAVE_AS = ""
+# TAG_SAVE_AS = ""
+# TAGS_SAVE_AS = ""
 
 # #### URL settings ####
 
