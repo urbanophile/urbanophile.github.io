@@ -95,7 +95,7 @@ body {
   max-width: 70ch;
 
     /* should be about 50-70 characters wide */
-  line-height: 1.3em;
+  line-height: 1.5em;
 
   /* larger spacing on larger screens, very small spacing on tiny screens */
   padding: calc(1vmin + .5rem);

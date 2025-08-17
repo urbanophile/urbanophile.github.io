@@ -30,7 +30,6 @@ Both cell types are used in batteries: **primary batteries** like commercial alk
 
 
 These are respective:
--
     - electrolyte
         - ions
         - separator
