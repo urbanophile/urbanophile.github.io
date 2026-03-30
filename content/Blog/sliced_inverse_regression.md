@@ -1,7 +1,7 @@
 Title: Sliced Inverse Regression
 Authors: Matt Gibson
 Date: 2024-04-18
-<!-- Tags: statistics, machine learning -->
+Tags: statistics, machine learning
 Summary: An introduction to Sliced Inverse Regression (SIR), a supervised dimensionality reduction technique that preserves information relevant to the target variable.
 
 ![MyImage]({attach}../images/cake_slice.png)

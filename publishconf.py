@@ -15,6 +15,9 @@ from pelicanconf import *
 
 SITEURL = "https://matthew-gibson.com"
 RELATIVE_URLS = False
+
+FEED_DOMAIN = SITEURL
+FEED_ALL_ATOM = "feeds/all.atom.xml"
 # DISPLAY_PAGES_ON_MENU = True
 
 ANALYTICS = """<!-- Cloudflare Web Analytics -->
