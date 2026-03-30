@@ -1,4 +1,4 @@
-Title: CV
+Title: Curriculum Vitae
 Author: Matt Gibson
 Summary: Experienced professional open to opportunities. Ph.D. in Computer Vision and Machine Learning with practical experience.
 Save_as: cv.html

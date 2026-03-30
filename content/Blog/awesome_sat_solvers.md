@@ -1,6 +1,7 @@
 Title: Awesome SAT solvers
 Date: 2025-01-30
 Authors: Matt Gibson
+Summary: An introductory review of SAT solvers via a curated awesome list, covering their evolution from Chaff onwards and key resources including the Handbook of SAT.
 
 
 These "awesome repos" are a little bit cringe and link farm-y but also very useful. I've made an [awesome sat solvers](https://github.com/urbanophile/awesome-sat-solvers) as a introductory review of SAT and SAT solvers. 

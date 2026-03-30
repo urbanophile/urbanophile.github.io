@@ -1,7 +1,8 @@
-Title: Updating and reflecting on my website 
+Title: Updating and reflecting on my website
 Date: 2024-01-15
 Authors: Matt Gibson
 Modified: 2024-04-30
+Summary: Reflections on returning to a Pelican-based personal website after years away: what works, what doesn't, and thoughts on static site generation.
 
 ![The prodigal son, also reflecting.]({attach}../images/prodigal_son.png)
 
