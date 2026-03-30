@@ -1,5 +1,5 @@
 Title: What LLMs can't do
-Author: Matt Gibson
+Authors: Matt Gibson
 Date: 2024-04-30
 Summary: Examining the limits of Large Language Models: whether they think or understand language, and what the research literature reveals about their capabilities and shortcomings.
 

@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+from datetime import date
 
 ########## IMPORTANT ###########################
 # some settings are only for local development #
@@ -10,6 +11,7 @@ from __future__ import unicode_literals
 AUTHOR = "Matt Gibson"
 SITENAME = "Matt Gibson"
 SITESUBTITLE = "Artisanal Data and Software Gibbon"
+CURRENT_YEAR = date.today().year
 
 # configure automatically if using githubpages + custom domain
 SITEURL = ""
@@ -41,8 +43,6 @@ PAGE_PATHS = ["pages"]  # pages are standalone html
 ARTICLES_PATH = ["blog"]  # articles are arranged chronologically
 
 # where the output is saved
-ARTICLE_URL = "blog/{slug}.html"
-ARTICLE_SAVE_AS = "blog/{slug}.html"
 INDEX_SAVE_AS = "blog/index.html"
 
 # #### Metadata ####
@@ -54,7 +54,6 @@ TIMEZONE = "Australia/Sydney"
 STATIC_PATHS = ["images", "extra/robots.txt"]
 EXTRA_PATH_METADATA = {
     "extra/robots.txt": {"path": "robots.txt"},
-    "extra/favicon.ico": {"path": "favicon.ico"},
 }
 
 # CATEGORIES_SAVE_AS = ""

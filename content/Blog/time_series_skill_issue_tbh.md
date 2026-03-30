@@ -1,5 +1,5 @@
 Title: skill issue tbh: ml time series notes
-Author: Matt Gibson
+Authors: Matt Gibson
 Date: 2024-04-18
 Tags: statistics, machine learning, time series
 Modified: 2025-01-07
