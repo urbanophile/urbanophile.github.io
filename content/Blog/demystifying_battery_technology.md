@@ -1,6 +1,7 @@
 Title: Demystifying Battery Technology
 Date: 2024-05-11
 Authors: Matt Gibson
+Summary: A primer on battery technology for software developers: the history, electrochemistry, and key concepts behind how batteries work and why they matter.
 
 ![Illustration of Daniell cell]({attach}../images/daniell_cell.png)
 

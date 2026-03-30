@@ -1,8 +1,9 @@
-Title: skill issue tbh: ml time series notes 
+Title: skill issue tbh: ml time series notes
 Author: Matt Gibson
 Date: 2024-04-18
 Tags: statistics, machine learning, time series
 Modified: 2025-01-07
+Summary: Notes on ML approaches to time series forecasting, the M competitions, and why foundation models struggle with the generality of tabular and time series data.
 
 
 Now and again I see people talking about foundation models for time series data. It's one of those things, like the puzzlement over the inability of deep learning models to outperform traditional models tabular data, that makes me think people don't grasp the generality of of tabular and time series data. Time series and tabular data are much more general than images, images and text data. In my opinion, much of the success of current methods relies on exploiting the structure of the data. The generality of these data type imho precludes finding such structure except in specific, limited cases e.g. speech recognition, weather data etc.

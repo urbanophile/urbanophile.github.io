@@ -1,4 +1,6 @@
 anyio==4.2.0
+pelican-seo
+pelican-sitemap
 blinker==1.7.0
 certifi==2024.2.2
 charset-normalizer==3.3.2
