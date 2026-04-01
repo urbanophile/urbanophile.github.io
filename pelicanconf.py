@@ -51,7 +51,7 @@ DEFAULT_DATE_FORMAT = "%Y %B %d"
 TIMEZONE = "Australia/Sydney"
 
 # #### Static Assets ####
-STATIC_PATHS = ["images", "extra/robots.txt"]
+STATIC_PATHS = ["images", "extra/robots.txt", "js"]
 EXTRA_PATH_METADATA = {
     "extra/robots.txt": {"path": "robots.txt"},
 }

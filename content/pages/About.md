@@ -5,35 +5,25 @@ Save_as: about.html
 
 ![A bad photo of me in my darkest days]({attach}../images/me_bad.png)
 
-<form id="contactForm" class="contact-form notice gentle-flex">
+<form class="notice gentle-flex" aria-label="Contact form"
+      data-ajax
+      data-success-msg="✓ Message sent!"
+      data-error-msg="✗ Something went wrong — try emailing me directly.">
   <fieldset>
-  <legend>Got an interesting question? Get in touch</legend>
-  <input type="text" name="name" placeholder="Your Name" required>
-  <input type="email" name="email" placeholder="Your Email" required>
-  <textarea name="message" placeholder="Your Message" required></textarea>
-  <button type="submit">Send Message</button>
+    <legend>Got an interesting question? Get in touch</legend>
+    <input type="text" name="website" autocomplete="off" tabindex="-1" aria-hidden="true" style="display:none" />
+    <input type="hidden" name="formType" value="contact" />
+    <input type="hidden" name="formLoadTime" />
+    <label for="contactName">Name</label>
+    <input type="text" id="contactName" name="name" placeholder="Ellen Ripley" required />
+    <label for="contactEmail">Email</label>
+    <input type="email" id="contactEmail" name="email" placeholder="eripley@nostromo.com" required />
+    <label for="contactMessage">Message</label>
+    <textarea id="contactMessage" name="message" placeholder="Your message" required></textarea>
+    <button type="submit">Send Message</button>
   </fieldset>
+  <div class="form-message" role="status" aria-live="polite"></div>
 </form>
-
-<script>
-document.getElementById('contactForm').addEventListener('submit', function(e) {
-  e.preventDefault();
-  
-  const formData = new FormData(this);
-  
-  fetch('https://script.google.com/macros/s/AKfycbxPR0yIyxn6YntmvvUvgCi8iabO586JhGdOQ6ebL5vlyuufaW37IA8GdAvZqOyEs-f2Uw/exec', {
-    method: 'POST',
-    body: formData
-  })
-  .then(response => {
-    alert('Message sent successfully!');
-    this.reset();
-  })
-  .catch(error => {
-    alert('Error sending message');
-  });
-});
-</script>
 
 
 I am a software and machine learning developer in [Sydney](http://en.wikipedia.org/wiki/Sydney), NSW, Australia. I like [computing](https://en.wikipedia.org/wiki/MOS_Technology_6502), [data](https://search.r-project.org/CRAN/refmans/vcd/html/HorseKicks.html), [machine learning](https://pytorch.org/) and [cooking](https://web.archive.org/web/20160210065535/http://www.seriouseats.com/the-food-lab/?ref=nav_main). I'm delighted by the scientific enterprise which allows us ["to see a World in a Grain of Sand"](https://www.poetryfoundation.org/poems/43650/auguries-of-innocence). 

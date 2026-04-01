@@ -10,6 +10,8 @@ Look at this for info on
   - ~~remember the `CNAME` file in `content/extra/` and the CNAME config in `pelicanconf.py`. [Relevant pelican docs](https://docs.getpelican.com/en/latest/tips.html#copy-static-files-to-the-root-of-your-site).~~
 
 
+Also forms handled with google sheets in `apps-script`. The sheet URL is [here](https://docs.google.com/spreadsheets/d/1-gKuzYG3DFtWpsA7A5p3WFSGLQmO3pOshezJrZZnPNk/edit?usp=sharing) and the app url is [here](https://script.google.com/home/projects/1I-Xc7gNc_MKJO4-TJCKK1XaHW0h3o60c1ZJ-O7Tbi0pVN9CHnLOl6DuU/edit). Remember to `clasp push` and redeploy the Apps Script.
+
 helpful utilities:
   - [Squoosh app](https://squoosh.app/editor) to compress images
 
