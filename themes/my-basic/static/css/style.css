@@ -1,3 +1,6 @@
+/* === RESETS === */
+
+
 @import url("normalize.css");
 
 /*
@@ -15,9 +18,7 @@
    vertical-align: middle;
  }
 
-/* ##########*/
-/* Vars      */
-/* ##########*/
+/* === DESIGN === */
 
 :root {
   --my-monospace-code: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
@@ -28,7 +29,7 @@
 
   --h1-font-size: 2em;
   --h2-font-size: 1.512em;
-  --h3-size: 1.429em;
+  --h3-font-size: 1.429em;
   --base-font-size: 1em;
   --small-font-size: 75%;
 
@@ -40,9 +41,7 @@
   --figure-background: #f8f8f8;
 
 
-  /*------------*/
-  /* light mode */
-  /*------------*/
+  /* --- light mode --- */
   --text-primary: #11191f;
   --text-secondary: #4e4e4e;
   --text-active:#858585;  
@@ -52,15 +51,14 @@
   --bg-primary:#fff;
   --border: #cdcdcd;
 
-  --bg-secondary: ;
+  --bg-secondary: #f5f5f5;
 
   --code-background-color: #f9fafb;
   --code-color: hsl(205, 10%, 50%);
 }
 
-/* ##################### */
-/* styling for darkmode  */
-/* ##################### */
+/* --- dark mode --- */
+
 .dark {
 
   --text-primary: #fff;
@@ -77,9 +75,7 @@
   --code-color:hsl(205, 10%, 50%);
 }
 
-/* ####################### */
-/* styling for typography  */
-/* ####################### */
+/* === GLOBAL ELEMENTS === */
 
 
 body {
@@ -94,7 +90,7 @@ body {
   /* should be about 50-70 characters wide */
   max-width: 70ch;
 
-  line-height: 1.5em;
+  line-height: 1.5;
 
   /* larger spacing on larger screens, very small spacing on tiny screens */
   padding: calc(1vmin + .5rem);
@@ -105,7 +101,7 @@ body {
 
 /* Typographical settings */
 h1, h2, h3 {
-  line-height: 2rem;
+  line-height: 1.2;
   font-weight: 600;
   letter-spacing: -0.032em;
   color: var(--text-primary);
@@ -113,16 +109,21 @@ h1, h2, h3 {
 
 /* Headings */
 h1 {
-	font-size: var(--h1-font-size);
+  font-size: var(--h1-font-size);
 }
 
 h2 {
-	font-size: var(--h2-font-size);
+  font-size: var(--h2-font-size);
 }
 
 h3 {
-	font-size: var(--h3-size);
+  font-size: var(--h3-font-size);
 }
+
+h1, h2, h3, nav {
+  font-family: var(--my-monospace-code);
+}
+
 
 small, sub, sup {
   font-size: var(--small-font-size);
@@ -133,13 +134,8 @@ hr {
 
 }
 
-/* ################ */
-/* styling for nav  */
-/* ################ */
+/* === COMPONENTS === */
 
-h1, h2, h3, nav {
-  font-family: var(--my-monospace-code);
-}
 
 nav a {
   color: var(--text-secondary)
@@ -154,12 +150,12 @@ nav, nav ul {
   display: flex;
   list-style-type: none;
   padding: 0;
-  margin:0.5em 0em;
+  margin: 0.5em 0;
 
 }
 
 nav ul li {
-  padding: 0em 0.5em 0% 0;
+  padding: 0 0.5em 0 0;
   display: block;
 	font-size: var(--h2-font-size);
   letter-spacing: -0.032em;
@@ -182,10 +178,42 @@ nav  a:hover {
   text-decoration-thickness: 0.1em;
 }
 
+/* -------------*/
+/* dark toggle  */
+/* -------------*/
 
-/* ########################### */
+body.dark #moon{
+  display: none;
+}
+body:not(.dark) #sun{
+  display: none;
+}
+
+#theme-toggle svg {
+  /* height: 1.512em; */
+  color: var(--text-primary);
+  cursor: pointer;
+  vertical-align: baseline;
+
+}
+
+#theme-toggle {
+  background-color: var(--bg-primary);
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+#theme-toggle svg:hover {
+  color: var(--text-link);
+  border: none;
+}
+
+
+
+/* --------------------------- */
 /* styling for main & article  */
-/* ########################### */
+/* --------------------------- */
 
 main a:link {
     color: var(--text-link);
@@ -194,18 +222,12 @@ main a:link {
 }
 
 main a:hover, main a:focus {
-    /* color: var(--primary-hover); */
-    /* text-decoration-thickness: 0.1em; */
-    text-decoration: none;
-
+  text-decoration: none;
 }
 
 main a:visited {
   color: var(--text-visited);
   text-decoration: underline;
-
-  /* text-decoration: underline; */
-  /* text-decoration-thickness: 0.1em; */
 }
 
 
@@ -267,16 +289,7 @@ blockquote {
   font-style: italic;
 }
 
-
-
-/* address and date should both be inline
-article footer address, footer time {
-  display: inline;
-} */
-/* ----- */
-/* code  */
-/* ----- */
-
+/* --- code --- */
 
 /* Pre and Code */
 pre {
@@ -322,7 +335,7 @@ button,
 textarea,
 select,
 input {
-  color: var(--text);
+  color: var(--text-primary);
   background-color: var(--bg-primary);
   border: 1px solid var(--border);
 }
@@ -333,23 +346,12 @@ textarea:not([cols]) {
   width: 100%;
 }
 
-/* Makes input fields wider on smaller screens */
-/* @media only screen and (max-width: 720px) {
-  textarea,
-  select,
-  input {
-    width: 100%;
-  }
-} */
-
 fieldset {
   border: 0;
 }
 
 
-/* #################### */
-/* Some Utility classes */
-/* #################### */
+/* === UTILITY CLASSES === */
 
 /* figure class */
 .figure {
@@ -366,37 +368,6 @@ fieldset {
   margin: 2rem 0;
 }
 
-
-/* ############################### */
-/* styling for dark toggle button  */
-/* ############################### */
-
-body.dark #moon{
-  display: none;
-}
-body:not(.dark) #sun{
-  display: none;
-}
-
-#theme-toggle svg {
-  /* height: 1.512em; */
-  color: var(--text-primary);
-  cursor: pointer;
-  vertical-align: baseline;
-
-}
-
-#theme-toggle {
-  background-color: var(--bg-primary);
-  border: none;
-  padding: 0;
-  margin: 0;
-}
-
-#theme-toggle svg:hover {
-  color: var(--text-link);
-  border: none;
-}
 
 .gentle-flex {
   display: flex;
@@ -419,3 +390,4 @@ body:not(.dark) #sun{
   border-radius: 50%; animation: spin 0.6s linear infinite;
   vertical-align: middle;
 }
+
