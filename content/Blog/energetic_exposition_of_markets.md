@@ -1,6 +1,7 @@
-Title: An Energetic Exposition: notes about electricity markets
-Date: 2024-05-08
+Title: An Energetic Exposition 1: notes about electricity markets
+Date: 2024-05-06
 Authors: Matt Gibson
+Modified: 2026-04-01
 Summary: Notes on electricity markets: their history, the complexity of generation and pricing, and why they differ from standard economics textbook models.
 
 ![Melbourne Terminal substation]({attach}../images/daniell_cell.png)
