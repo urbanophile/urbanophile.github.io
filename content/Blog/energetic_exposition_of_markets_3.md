@@ -63,13 +63,14 @@ In real situations, heat rates change depending on how much power is produced, s
 
 ## Prototypical Problems II: Cost, production and the Unit commitment problem
 
-The simple classic dispatch model above doesn't say much about properties of the technologies, but of course what's on or off or what storage is a available at any particular moment in time is important. For example, a hydro plant might have zero marginal cost but only be able to produce for a few hours, and a thermal power plant might have high start-up costs and be unable to ramp up or down quickly.
+The simple dispatch model above does not tell us much about the features of different technologies. However, it is important to know which plants are running or what storage is available at any given time. For example, a hydro plant might have zero marginal cost but can only run for a few hours, while a thermal power plant might have high start-up costs and cannot change its output quickly.
 
-This means we want to add terms to the cost function to capture these properties, and add constraints to capture the production limits. For example, we might have quasi-fixed costs such as:
+This means we need to add terms to the cost function to include these features and add constraints for production limits. For example, there may be quasi-fixed costs such as:
+
   * no-load costs
-  * start-up costs (hydro plants minutes, thermal power hours)
+  * start-up cost and time (minutes for hydro plants, hours for thermal power)
 
-These are, unfortunately 0-1 variables, which makes the problem a mixed-integer linear program (MILP).
+These costs are represented by 0-1 variables, which means the problem becomes a mixed-integer linear program (MILP).
 
 
 * [Unit Commitment Problem Notebook](https://nbviewer.org/github/MOSEK/Tutorials/blob/master/unitcommitment/ucp.ipynb)
