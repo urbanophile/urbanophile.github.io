@@ -1,10 +1,18 @@
 var NOTIFY_EMAIL = "contact.matt.gibson@gmail.com";
 
+function doGet(_e) {
+  var count = getOrCreateSheet("Spam").getLastRow();
+  return ContentService
+    .createTextOutput(JSON.stringify({ spam: count }))
+    .setMimeType(ContentService.MimeType.JSON);
+}
+
 function doPost(e) {
   var data = e.parameter;
 
   // honeypot: bots fill hidden fields, humans don't
   if (data.website) {
+    getOrCreateSheet("Spam").appendRow([new Date()]);
     return ContentService.createTextOutput("Success");
   }
 

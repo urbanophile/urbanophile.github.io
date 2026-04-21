@@ -14,6 +14,15 @@ from pelicanconf import *
 
 
 SITEURL = "https://matthew-gibson.com"
+
+import urllib.request, json
+try:
+    with urllib.request.urlopen(
+        "https://script.google.com/macros/s/AKfycbylMyfo6MCXTG0ULL6nctqCwmEWIx8MS4s3G0756_PH967xJShv_Nl2nz9PdaECPlA2yw/exec"
+    ) as _r:
+        SPAM_COUNT = json.loads(_r.read()).get("spam", 0)
+except Exception:
+    SPAM_COUNT = 0
 RELATIVE_URLS = False
 # DISPLAY_PAGES_ON_MENU = True
 
